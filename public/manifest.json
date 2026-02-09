@@ -1,0 +1,23 @@
+{
+  "name": "St. Fox - Innovate Fearlessly, Protect Relentlessly",
+  "short_name": "St. Fox",
+  "description": "Cybersecurity services by Saint Fox Consultancy Pvt Ltd. Comprehensive managed security, cloud, data, and AI protection.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f9fafb",
+  "theme_color": "#1A3F7E",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

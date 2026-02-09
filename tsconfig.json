@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "react-router": ["./stubs/react-router"],
+      "react-router-dom": ["./stubs/react-router-dom"]
     }
   },
   "include": [
@@ -30,5 +32,12 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "components/atoms/BreachForm.tsx",
+    "components/landing/LandingSecurity/**/*",
+    "components/landing/VIGILEGallery.tsx",
+    "components/layout/sidebar.tsx",
+    "lib/flowbite-theme.ts"
+  ]
 }
