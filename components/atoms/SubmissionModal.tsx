@@ -63,9 +63,9 @@ export default function SubmissionModal({
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
             {formType === "contact-us" ? (
               <p className="text-[#fff] text-sm lg:text-base m-2 leading-[11.7px]">
-                <p className="text-lg lg:text-2xl font-bold text-gray-800">
+                <span className="text-lg lg:text-2xl font-bold text-white">
                   Thank you! We will reach out to you shortly.
-                </p>
+                </span>
               </p>
             ) : (
               <div>

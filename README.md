@@ -1,12 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SFC Website (Next.js)
 
-## Getting Started
+Static frontend website built with Next.js.
 
-First, run the development server:
+## First-time setup
+
+When you open this project for the first time, follow these steps to run it locally.
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+Or with another package manager:
+
+```bash
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### 2. Environment variables
+
+Copy the example env file and adjust if needed:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` and set:
+
+- **`NEXT_PUBLIC_API_URL`** – Base URL of the backend API (e.g. `http://localhost:3000` for local development). Forms and API calls use this.
+
+You can leave the default `http://localhost:3000` if your backend runs on that port.
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
+```
+
+Or:
+
+```bash
 yarn dev
 # or
 pnpm dev
@@ -14,23 +52,25 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will start on **http://localhost:4000** (port 4000 is configured in this project).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:4000](http://localhost:4000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Backend (optional)
 
-## Learn More
+Form submissions (e.g. enroll, breached) call the API at `NEXT_PUBLIC_API_URL`. Ensure the backend is running at that URL (e.g. `http://localhost:3000`) if you need those features to work.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Other commands
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Build for production:** `npm run build`
+- **Start production server:** `npm run start` (runs on port 4000)
+- **Lint:** `npm run lint`
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Learn more
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js documentation](https://nextjs.org/docs)
+- [Next.js deployment](https://nextjs.org/docs/app/building-your-application/deploying)

@@ -36,7 +36,6 @@ const initialVals: BreachFormValues = {
 };
 const experiencingBreachValidationSchema = {};
 const validationSchema = {};
-const handleSubmit = () => {};
 const title = "Breach Form";
 
 const BreachFormPage = () => {
