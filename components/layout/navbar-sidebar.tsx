@@ -12,6 +12,7 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import React, { useEffect } from "react";
 import { FaLinkedin } from "react-icons/fa";
+import FormikCaptcha, { type GoogleCaptchaRef } from "@/components/formik/FormikCaptcha";
 
 interface NavbarSidebarLayoutProps {
   isFooter?: boolean;
@@ -58,20 +59,25 @@ const NewsletterSchema = Yup.object().shape({
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
+  captchaToken: Yup.string().required("Please verify you are not a robot"),
 });
 const MainContentFooter: FC<{ className?: string }> = ({}) => {
   const [submitted, setSubmitted] = React.useState(false);
   const pathname = usePathname();
   const date = new Date();
   const currentYear = date.getFullYear();
+  const captchaRef = React.useRef<GoogleCaptchaRef | null>(null);
   useEffect(() => {
     setSubmitted(false);
   }, [pathname]);
 
   const handleSubmit = async (
-    values: { email: string },
+    values: { email: string; captchaToken: string },
     { resetForm }: any,
   ) => {
+    if (!values.captchaToken) {
+      return;
+    }
     try {
       const response = await fetch(
         "https://stfox.com/api/customers/subscribe",
@@ -87,6 +93,7 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
       if (response.ok) {
         // console.log("Newsletter submission:", values);
         resetForm();
+        captchaRef.current?.reset();
         setSubmitted(true);
       } else {
         console.error("Failed to submit", await response.text());
@@ -110,7 +117,7 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
             Innovate Fearlessly <br></br> {""} Protect Relentlessly
           </p>
           <Formik
-            initialValues={{ email: "" }}
+            initialValues={{ email: "", captchaToken: "" }}
             validationSchema={NewsletterSchema}
             onSubmit={handleSubmit}
             validateOnMount={false}
@@ -134,7 +141,8 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
                       2;
                       setSubmitted(false);
                     }}
-                  ></form>
+                  >
+                  </form>
 
                   <div className="min-h-[20px]">
                     {formik.errors.email && formik.touched.email && (

@@ -4,8 +4,9 @@ import { Modal } from "flowbite-react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { IoCloseOutline } from "react-icons/io5";
 import * as Yup from "yup";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import Select from "react-select";
+import FormikCaptcha, { type GoogleCaptchaRef } from "@/components/formik/FormikCaptcha";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { CountryCode, parsePhoneNumberFromString } from "libphonenumber-js";
@@ -38,6 +39,8 @@ import {
   VIGILE,
   VULNERABILITY,
 } from "@/constants/RouteConstant";
+import { postWithCsrf } from "@/lib/api";
+import { API_BASE_URL } from "@/lib/config";
 import SubmissionModal from "./SubmissionModal";
 
 const Spinner = () => (
@@ -93,6 +96,7 @@ const initialVals = {
   jobTitle: "",
   residenceCountry: null,
   agree: false,
+  captchaToken: "",
 };
 
 const freeEmailDomains = [
@@ -156,6 +160,7 @@ const validationSchema = Yup.object().shape({
   agree: Yup.boolean()
     .oneOf([true], "You must agree to the terms")
     .required("Required"),
+  captchaToken: Yup.string().required("Please verify you are not a robot"),
 });
 
 const validatePhoneNumber = (
@@ -205,6 +210,7 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
   const location = useLocation();
   const [phoneCountry, setPhoneCountry] = useState("in");
   const [submissionModalOpen, setSubmissionModalOpen] = useState(false);
+  const captchaRef = useRef<GoogleCaptchaRef | null>(null);
 
   const countryOptions = useMemo(() => {
     return countryList.getData().map((country: any) => ({
@@ -229,7 +235,11 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
 
   const path = location.pathname.split("/")[1];
 
-  const handleSubmit = async (values: any, { setSubmitting }: any) => {
+  const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
+    if (!values.captchaToken) {
+      setSubmitting(false);
+      return;
+    }
     setSubmitting(true);
     const cleanedPhoneNumber = values.phoneNumber.replace(/^(\+?\d{1,2})/, "");
     const payload = {
@@ -295,12 +305,12 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
                                                           ? AI_SECURITY
                                                           : "",
     };
+    payload.captchaToken = values.captchaToken ;
     try {
-      const response = await fetch("https://stfox.com/api/services/enroll", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const response = await postWithCsrf(
+        `${API_BASE_URL}/api/services/enroll`,
+        payload
+      );
 
       const data = await response.json();
       // console.log("API Response:", data);
@@ -309,6 +319,8 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
         alert("Form submitted successfully!");
         setSubmissionModalOpen(true);
         setOpen(false);
+        resetForm();
+        captchaRef.current?.reset();
       } else {
         alert("Submission failed. Please try again later.");
         setOpen(false);
@@ -319,6 +331,8 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
       alert("Something went wrong. Please try again later.");
       setOpen(false);
       setSubmissionModalOpen(false);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -546,6 +560,7 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
                       className="text-[#f83737] text-sm ml-2"
                     />
                   </div>
+                  <FormikCaptcha name="captchaToken" captchaRef={captchaRef} />
                   <ReusableBtn
                     type="submit"
                     isLoading={isSubmitting}

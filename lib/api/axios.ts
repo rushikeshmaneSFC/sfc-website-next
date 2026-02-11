@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { API_BASE_URL } from "@/lib/config";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: `${API_BASE_URL}/api`,
 });
 
 const token = localStorage.getItem("token");
