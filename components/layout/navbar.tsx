@@ -21,6 +21,7 @@ import Link from "next/link";
 const ExampleNavbar: FC = function () {
   const { isPageWithSidebar } = useSidebarContext();
 
+  
   const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("");
   const [navbarToggle, setNavbarToggle] = useState(false);
