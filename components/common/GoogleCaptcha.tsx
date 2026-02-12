@@ -21,7 +21,7 @@ const GoogleCaptchaComponent = (
   { onChange, onExpired }: Omit<GoogleCaptchaProps, "value">,
   ref: React.Ref<GoogleCaptchaRef>,
 ) => {
-  const recaptchaRef = useRef<ReCAPTCHA | null>(null);
+  const recaptchaRef = useRef<any>(null);
 
   const handleChange = useCallback(
     (token: string | null) => {
