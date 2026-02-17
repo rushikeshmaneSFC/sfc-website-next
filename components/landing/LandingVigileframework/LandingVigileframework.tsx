@@ -25,9 +25,7 @@ function LandingVigileframework() {
   return (
     <div className="flex h-auto  w-full items-center justify-center  bg-cover bg-center bg-no-repeat py-5 md:h-auto md:px-4 md:py-5  lg:h-[420px] lg:px-20 lg:py-0 2xl:px-40 2xl:py-10 ">
       <div className="items-center justify-center space-y-2 text-center">
-        <h2 className="text-xl font-bold md:text-2xl lg:text-4xl lg:font-semibold">
-          Your Path to Cyber Resilience
-        </h2>
+    <h2 className="text-4xl font-bold">Your Path to Cyber Resilience</h2>
         <p className="px-3 text-base font-medium md:text-xl lg:px-0 lg:text-lg lg:font-semibold">
           Our proprietary VIGILE Framework ensures comprehensive security for
           every layer of your organization.
