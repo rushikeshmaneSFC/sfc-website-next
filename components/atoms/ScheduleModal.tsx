@@ -723,7 +723,7 @@ export default function ScheduleModal({
           <div className="lg:py-6 lg:px-12 px-3 py-6 relative bg-white rounded-lg overflow-auto">
             <div className="flex justify-between mx-4 my-2">
               <p className="lg:text-2xl text-xl font-semibold mb-4">
-                {from === "breach" ? "Connect with Usaaaaaa" : title}
+                {from === "breach" ? "Connect with Us" : title}
               </p>
 
               <button

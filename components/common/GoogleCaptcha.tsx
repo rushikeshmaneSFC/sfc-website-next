@@ -3,7 +3,7 @@
 import React, { useRef, useCallback } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? "6Le8XGUsAAAAAHRVKsU73tg6kNuuEN_Mg_E6Hxcg";
+const SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ;
 
 export interface GoogleCaptchaRef {
   reset: () => void;

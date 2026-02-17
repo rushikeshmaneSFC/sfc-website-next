@@ -32,6 +32,10 @@ export default function LandingPageClient() {
 
   return (
     <FlowbiteWrapper>
+      <h1 className="sr-only">
+        Cybersecurity Services by Saint Fox Consultancy – Managed Security,
+        Cloud & AI Protection
+      </h1>
       <LandingHerosection />
 
       <div
@@ -58,4 +62,3 @@ export default function LandingPageClient() {
     </FlowbiteWrapper>
   );
 }
-

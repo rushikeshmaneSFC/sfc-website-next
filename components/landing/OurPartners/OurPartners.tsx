@@ -57,7 +57,7 @@ function OurPartners() {
       <h2 className="text-center text-xl lg:text-3xl font-semibold text-[#fff] mt-6 mb-10">
         Our Partners
       </h2>
-      <p className="text-center text-sm text-[#fff] opacity-90 mb-6">
+      {/* <p className="text-center text-sm text-[#fff] opacity-90 mb-6">
         Trusted by enterprises worldwide.{" "}
         <a
           href="https://www.linkedin.com/company/stfox-com/mycompany/?viewAsMember=true"
@@ -67,7 +67,7 @@ function OurPartners() {
         >
           Follow us on LinkedIn
         </a>
-      </p>
+      </p> */}
       <div className="grid lg:grid-cols-6 md:grid-cols-3  justify-center items-center gap-4 2xl:gap-20 lg:gap-10 lg:px-0  grid-cols-3 ">
         {ourPartnersLightTheme.slice(0, 6).map((logo) => (
           <div

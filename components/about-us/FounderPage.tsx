@@ -121,7 +121,7 @@ const FounderPage = () => {
 
   return (
     <div className="bg-[url('https://saintfox.azureedge.net/datav2/FoundersBg.webp')] bg-no-repeat bg-cover bg-center object-contain text-[#fff] lg:px-20 py-20 px-5 md:px-4">
-      <div className="text-center max-w-4xl mx-auto">
+      {/* <div className="text-center max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Meet Our Founders</h2>
         <p className="text-gray-400 mb-16">
           Our foundation is built on decades of global leadership in
@@ -161,8 +161,8 @@ const FounderPage = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mt-24 text-center">
+      </div> */}
+      {/* <div className="mt-24 text-center">
         <h3 className="text-2xl font-bold mb-3">Executive Team</h3>
         <p className="mb-10 lg:px-20 2xl:px-96">
           Our executive leadership brings rich experience across cybersecurity,
@@ -203,7 +203,7 @@ const FounderPage = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="mt-20 ">
         <h1 className="mb-6 font-bold">Alma Mater</h1>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:flex lg:flex-wrap justify-center flex-wrap gap-8 2xl:gap-16 items-center text-center">
