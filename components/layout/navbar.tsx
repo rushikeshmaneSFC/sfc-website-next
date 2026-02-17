@@ -21,7 +21,7 @@ import Link from "next/link";
 const ExampleNavbar: FC = function () {
   const { isPageWithSidebar } = useSidebarContext();
 
-  
+  const [logoSrc, setLogoSrc] = useState("/images/home/Stfoxlogo.webp"); 
   const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("");
   const [navbarToggle, setNavbarToggle] = useState(false);
@@ -92,16 +92,24 @@ const ExampleNavbar: FC = function () {
     };
   }, []);
 
-  const getLogoSrc = () => {
-    if (
-      whiteBackgroundPages.includes(pathname) ||
-      scrolled ||
-      isSmallScreen()
-    ) {
-      return "/images/home/Stfoxlogo.webp";
-    }
-    return "/images/home/StfoxLogo1.webp";
-  };
+
+
+const updateLogoSrc = () => {
+  if (
+    whiteBackgroundPages.includes(pathname) ||
+    scrolled ||
+    isSmallScreen()
+  ) {
+    setLogoSrc("/images/home/Stfoxlogo.webp");
+  } else {
+    setLogoSrc("/images/home/StfoxLogo1.webp");
+  }
+};
+
+
+useEffect(() => {
+  updateLogoSrc();
+}, [pathname, scrolled]);
 
   const services = {
     managedServices: [
@@ -770,7 +778,7 @@ const ExampleNavbar: FC = function () {
             <Link href="/">
               <img
                 alt="Logo"
-                src={getLogoSrc()}
+                src={logoSrc}
                 className="h-[35px] text-[#1F1F1F]"
               />
             </Link>
@@ -876,7 +884,6 @@ const ExampleNavbar: FC = function () {
           <div className="bg-white my-4 px-4 absolute top-[43px] left-0 w-full h-screen z-50">
             <div className="overflow-y-auto w-full my-4 px-2">
               <TextInput
-                icon={HiSearch}
                 type="search"
                 placeholder="Search"
                 required
@@ -888,7 +895,7 @@ const ExampleNavbar: FC = function () {
                   className="flex justify-between items-center w-full cursor-pointer"
                   onClick={() => setNavbarToggle(!navbarToggle)}
                 >
-                  <button className="text-[16px] font-medium">Solutions</button>
+                  <button className="text-[16px] font-medium">Solutionsssssssssssssss</button>
                   {navbarToggle ? (
                     <FaChevronUp className="h-3 w-3" />
                   ) : (
