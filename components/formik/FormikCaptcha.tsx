@@ -23,7 +23,6 @@ function FormikCaptcha({ name, captchaRef: parentRef }: FormikCaptchaProps) {
       <GoogleCaptcha
         ref={ref}
         onChange={(token) => {
-          console.log("captcha token:", token);
           helpers.setValue(token ?? "");
         }}
         onExpired={() => helpers.setValue("")}

@@ -20,7 +20,16 @@ export async function postWithCsrf(
   const origin = new URL(url).origin;
 
   const doPost = async (): Promise<Response> => {
+
+    console.log(origin,"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+    
+    
     const csrfToken = await fetchCsrfToken(origin);
+    
+    console.log(csrfToken,"333333333333333333#######################################################################33333333333333333333333333333333333333333333333333333333333")
+
+
+    
     const response = await fetch(url, {
       method: "POST",
       credentials: "include",
