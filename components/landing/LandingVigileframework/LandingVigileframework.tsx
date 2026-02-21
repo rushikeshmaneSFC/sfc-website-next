@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react";
 
 function LandingVigileframework() {
+  console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@LandingVigileframework")
   const [isIOSorMac, setIsIOSorMac] = useState(false);
 
   useEffect(() => {
