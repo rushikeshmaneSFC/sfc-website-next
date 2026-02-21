@@ -720,7 +720,7 @@ export default function ScheduleModal({
           dismissible
           size="3xl"
         >
-          <div className="lg:py-6 lg:px-12 px-3 py-6 relative bg-white rounded-lg overflow-auto">
+          <div className="lg:py-6 lg:px-12 px-3 py-6 relative bg-white rounded-lg max-h-[90vh] overflow-y-auto">
             <div className="flex justify-between mx-4 my-2">
               <p className="lg:text-2xl text-xl font-semibold mb-4">
                 {from === "breach" ? "Connect with Us" : title}
@@ -743,27 +743,27 @@ export default function ScheduleModal({
                   How can we help you?
                 </p>
                 <div className="flex gap-4">
-                  <label className="flex items-center gap-2">
+                  <label className="flex items-center gap-2 cursor-pointer">
                     <input
                       type="radio"
                       name="breachOptions"
                       value="experiencingBreach"
                       checked={selectedOption === "experiencingBreach"}
                       onChange={(e) => setSelectedOption(e.target.value)}
-                      className="form-radio"
+                      className="w-4 h-4 shrink-0 appearance-none rounded-full border-2 border-gray-300 bg-white cursor-pointer checked:border-[#1A3F7E] checked:bg-[radial-gradient(circle_at_center,_white_32%,_#1A3F7E_32%)] focus:outline-none focus:ring-2 focus:ring-[#1A3F7E] focus:ring-offset-1"
                     />
                     <span className="text-sm lg:text-md">
                       Experiencing a Breach?
                     </span>
                   </label>
-                  <label className="flex items-center gap-2">
+                  <label className="flex items-center gap-2 cursor-pointer">
                     <input
                       type="radio"
                       name="breachOptions"
                       value="contactForService"
                       checked={selectedOption === "contactForService"}
                       onChange={(e) => setSelectedOption(e.target.value)}
-                      className="form-radio"
+                      className="w-4 h-4 shrink-0 appearance-none rounded-full border-2 border-gray-300 bg-white cursor-pointer checked:border-[#1A3F7E] checked:bg-[radial-gradient(circle_at_center,_white_32%,_#1A3F7E_32%)] focus:outline-none focus:ring-2 focus:ring-[#1A3F7E] focus:ring-offset-1"
                     />
                     <span className="text-sm lg:text-md">
                       Contact us for a Service

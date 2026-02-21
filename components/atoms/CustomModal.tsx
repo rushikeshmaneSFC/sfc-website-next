@@ -1,6 +1,6 @@
 // @ts-nocheck
 "use client";
-import { Modal } from "flowbite-react";
+import { Modal, ModalBody } from "flowbite-react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { IoCloseOutline } from "react-icons/io5";
 import * as Yup from "yup";
@@ -11,7 +11,8 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { CountryCode, parsePhoneNumberFromString } from "libphonenumber-js";
 import countryList from "country-list";
-import { useLocation } from "react-router";
+// import { useLocation } from "react-router";
+import { usePathname } from "next/navigation"; 
 import {
   AI_SECURITY,
   CLOUD_SECURITY,
@@ -206,8 +207,9 @@ const overlayTextMap = {
   "ai-security": "Access the Security for AI Datasheet",
   "identity-assessment": "Access the Identity Assessment Datasheet",
 };
-export default function CustomModal({ open, setOpen }: CustomModalProps) {
-  const location = useLocation();
+export default function   CustomModal({ open, setOpen }: CustomModalProps) {
+  const pathname = usePathname();  
+  
   const [phoneCountry, setPhoneCountry] = useState("in");
   const [submissionModalOpen, setSubmissionModalOpen] = useState(false);
   const captchaRef = useRef<GoogleCaptchaRef | null>(null);
@@ -233,7 +235,7 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
     </div>
   );
 
-  const path = location.pathname.split("/")[1];
+  const path = pathname?.split("/")?.[1] || "";
 
   const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
     if (!values.captchaToken) {
@@ -370,7 +372,7 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
             </div>
           </div>
 
-          <Modal.Body>
+          <ModalBody>
             <Formik
               initialValues={initialVals}
               validationSchema={validationSchema}
@@ -572,7 +574,7 @@ export default function CustomModal({ open, setOpen }: CustomModalProps) {
                 </Form>
               )}
             </Formik>
-          </Modal.Body>
+          </ModalBody>
         </div>
       </Modal>
       <SubmissionModal

@@ -33,7 +33,9 @@ function SaseManagedFirewallHero() {
       description: (
         <>
           <span className="text-[#5F89CB] font-bold">100%</span> audit-ready
-          reports with 30% faster processing
+          reports with{" "}
+          <span className="text-[#5F89CB] font-bold">30%</span> faster
+          processing
         </>
       ),
     },
@@ -69,11 +71,15 @@ function SaseManagedFirewallHero() {
           </div>
         </div>
 
-        <div className="lg:space-y-12 space-y-4 m-[auto] lg:m-0">
+        <div className="flex flex-col lg:space-y-12 space-y-4 m-[auto] lg:m-0 w-full">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={feature.align ? `flex lg:${feature.align}` : ""}
+              className={
+                index === 1
+                  ? "flex justify-center lg:justify-end"
+                  : "flex justify-center lg:justify-start"
+              }
             >
               <div
                 className="

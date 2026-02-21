@@ -1,6 +1,6 @@
 // @ts-nocheck
 "use client";
-import { Modal } from "flowbite-react";
+import { Modal, ModalBody } from "flowbite-react";
 import { IoCloseOutline } from "react-icons/io5";
 import ReusableBtn from "./ReusableBtn";
 import { SubIcon } from "@/constants/SvgConstant";
@@ -85,7 +85,7 @@ export default function NewSubmissionModal({
           </p>
         </div>
 
-        <Modal.Body>
+        <ModalBody>
           <div className="flex flex-col justify-center items-center gap-y-4 lg:text-center ">
             <div>
               <ul className="text-sm font-normal  list-none space-y-1">
@@ -117,7 +117,7 @@ export default function NewSubmissionModal({
               </div>
             </div>
           </div>
-        </Modal.Body>
+        </ModalBody>
       </div>
     </Modal>
   );

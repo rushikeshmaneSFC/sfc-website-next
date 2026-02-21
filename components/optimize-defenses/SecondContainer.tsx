@@ -29,7 +29,7 @@ const TeamBlock: React.FC<TeamBlockProps> = ({
         />
       </div>
       <p
-        className={`text-lg font-semibold bg-clip-text text-transparent whitespace-nowrap mt-2 ${textColor}`}
+   className={`text-lg font-semibold whitespace-nowrap mt-2 ${textColor}`}
       >
         {title}
       </p>

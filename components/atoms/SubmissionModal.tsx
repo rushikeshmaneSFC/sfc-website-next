@@ -1,7 +1,7 @@
 // @ts-nocheck
 "use client";
 
-import { Modal } from "flowbite-react";
+import { Modal, ModalBody } from "flowbite-react";
 import { IoCloseOutline } from "react-icons/io5";
 
 interface SubmissionModalProps {
@@ -82,7 +82,7 @@ export default function SubmissionModal({
         </div>
 
         {formType !== "contact-us" && path !== "" && (
-          <Modal.Body>
+          <ModalBody>
             <div className="flex flex-col justify-center items-center gap-y-4 text-center">
               <p className="text-2xl font-bold text-gray-800">
                 Thank You for Your Submission!
@@ -113,7 +113,7 @@ export default function SubmissionModal({
                 </a>
               </p>
             </div>
-          </Modal.Body>
+          </ModalBody>
         )}
       </div>
     </Modal>
