@@ -7,7 +7,7 @@ function ManagedSecurity() {
   return (
     <Wrapper className="flex items-center justify-center lg:h-[452px] md:h-[452px] h-auto py-10">
       <div className="grid grid-cols-[100%] max-w-6xl w-full items-center md:pb-[28px] md:grid-cols-[50%,50%]  ">
-        <div className="flex flex-col text-[#1F1F1F] justify-center lg:mt-10 md:mt-10 mt-0">
+        <div className="flex flex-col text-[#1F1F1F] dark:text-white justify-center lg:mt-10 md:mt-10 mt-0">
           <div className="flex items-center gap-2">
             <img
               loading="lazy"
@@ -15,14 +15,14 @@ function ManagedSecurity() {
               alt="icon"
               className="w-4 h-4 "
             />
-            <h3 className="text-[#1A3F7E] font-semibold text-xs lg:text-sm lg:leading-[20px]">
+            <h3 className="text-[#1A3F7E] dark:text-[#60a5fa] font-semibold text-xs lg:text-sm lg:leading-[20px]">
               Solution Overview
             </h3>
           </div>
-          <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold  text-[#1F1F1F] mt-2">
+          <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-[#1F1F1F] dark:text-white mt-2">
             Reimagine Identity Security with St. Fox
           </h2>
-          <p className="text-base md:text-lg lg:text-lg font-medium  mt-3 text-[#1C1C1C]">
+          <p className="text-base md:text-lg lg:text-lg font-medium mt-3 text-[#1C1C1C] dark:text-gray-200">
             At St. Fox, we simplify identity security by providing
             comprehensive, proactive, and scalable solutions.
           </p>
@@ -39,7 +39,7 @@ function ManagedSecurity() {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-[#1C1C1C] text-base  font-normal ">
+                <p className="text-[#1C1C1C] dark:text-gray-200 text-base font-normal">
                   {item.subtitle}
                 </p>
               </div>

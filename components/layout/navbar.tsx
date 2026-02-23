@@ -192,6 +192,30 @@ useEffect(() => {
     ],
   };
 
+  // Sync activeItem with current pathname - fixes stale active state when navigating via logo/links
+  useEffect(() => {
+    const allServices = [
+      ...services.managedServices,
+      ...services.securityServices,
+      ...services.dataSecurityServices,
+      ...services.securityAIServices,
+      ...services.cloudAIServices,
+      ...services.resourceServices,
+    ];
+    const matchingService = allServices.find(
+      (s) =>
+        s.link === pathname ||
+        (pathname.startsWith(s.link + "/") && s.link !== "/")
+    );
+    if (pathname === "/" || pathname === "/about-us") {
+      setActiveItem("");
+    } else if (matchingService) {
+      setActiveItem(matchingService.name);
+    } else {
+      setActiveItem("");
+    }
+  }, [pathname]);
+
   function SecurityServices() {
     return (
       <div className="flex justify-between p-6  bg-white shadow-md rounded-lg h-[500px]">
@@ -895,7 +919,7 @@ useEffect(() => {
                   className="flex justify-between items-center w-full cursor-pointer"
                   onClick={() => setNavbarToggle(!navbarToggle)}
                 >
-                  <button className="text-[16px] font-medium">Solutionsssssssssssssss</button>
+                  <button className="text-[16px] font-medium">Solutions</button>
                   {navbarToggle ? (
                     <FaChevronUp className="h-3 w-3" />
                   ) : (

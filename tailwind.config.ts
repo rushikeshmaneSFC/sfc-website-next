@@ -1,6 +1,10 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  // Use 'class' strategy: dark: variants only apply when .dark exists on a parent.
+  // We never add .dark, so the app stays in light mode. To enable dark mode later,
+  // add className="dark" to the html element (e.g., via theme toggle).
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",

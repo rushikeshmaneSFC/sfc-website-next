@@ -28,7 +28,7 @@ const IncidentResponseVigileFrameWork = () => {
           </div>
 
           <div className="flex justify-center items-center text-center lg:mx-7 mr-7">
-            <h1 className="text-2xl font-bold text-white">
+            <h1 className="text-2xl font-bold ">
               Built on the Proven VIGILE Framework
             </h1>
           </div>

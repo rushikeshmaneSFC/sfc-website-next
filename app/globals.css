@@ -1,4 +1,11 @@
+/*
+ * Global theme lock: Prevent OS/browser dark mode from affecting our design.
+ * color-scheme: light tells the browser to render form controls, scrollbars,
+ * and native elements in light theme. Works with Chrome Force Dark Mode,
+ * Windows/macOS dark mode, and browser flags.
+ */
 :root {
+  color-scheme: light;
   --tw-primary-text: #ffffff;
 }
 

@@ -87,8 +87,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.style.colorScheme='light'`,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
           rel="stylesheet"
@@ -106,7 +111,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans bg-gray-50 dark:bg-gray-900 antialiased">
+      <body className="font-sans bg-gray-50 antialiased">
         <AppShell>{children}</AppShell>
       </body>
     </html>
