@@ -90,6 +90,7 @@ const LandingSecurity = () => {
                 </p>
                 <Link
                   to={service.link}
+                  aria-label={`Learn more about ${service.title}`}
                   className="text-[#1C64F2] text-base font-medium inline-flex items-center gap-2"
                 >
                   <span>Learn more</span>
