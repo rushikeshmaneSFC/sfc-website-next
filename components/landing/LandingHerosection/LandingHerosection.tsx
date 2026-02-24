@@ -1,12 +1,16 @@
-// new animation:
 // @ts-nocheck
 "use client";
 
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import ReusableBtn from "@/components/atoms/ReusableBtn";
 import ScheduleModal from "@/components/atoms/ScheduleModal";
-import OurCustomer from "../OurCustomer/OurCustomer";
+
+const DynamicOurCustomer = dynamic(
+  () => import("../OurCustomer/OurCustomer").then((m) => m.default),
+  { ssr: false }
+);
 
 const LandingHerosection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -127,7 +131,7 @@ const LandingHerosection = () => {
       </div>
 
       <div className="w-full flex justify-center items-center lg:mt-0 2xl:mt-5 md:mt-0">
-        <OurCustomer />
+        <DynamicOurCustomer />
       </div>
 
       <ScheduleModal

@@ -1,16 +1,53 @@
 "use client";
 
 import type { ReactNode } from "react";
-import LandingFearlessly from "./LandingFearlessly/LandingFearlessly";
-import LandingInsights from "./LandingInsights/LandingInsights";
-import LandingManagedService from "./LandingManagedService/LandingManagedService";
-import LandingPageSecuringSector from "./LandingPageSecuringSector/LandingPageSecuringSector";
-import LandingThreats from "./LandingThreats/LandingThreats";
-import LandingVigileChoose from "./LandingVigileChoose/LandingVigileChoose";
-import LandingVigileframework from "./LandingVigileframework/LandingVigileframework";
-import OurPartners from "./OurPartners/OurPartners";
-import Whatwedo from "./Whatwedo/Whatwedo";
+import dynamic from "next/dynamic";
 import FlowbiteWrapper from "@/components/layout/flowbite-wrapper";
+
+const LandingFearlessly = dynamic(
+  () => import("./LandingFearlessly/LandingFearlessly").then((m) => m.default),
+  { ssr: false }
+);
+const LandingInsights = dynamic(
+  () => import("./LandingInsights/LandingInsights").then((m) => m.default),
+  { ssr: false }
+);
+const LandingManagedService = dynamic(
+  () =>
+    import("./LandingManagedService/LandingManagedService").then((m) => m.default),
+  { ssr: false }
+);
+const LandingPageSecuringSector = dynamic(
+  () =>
+    import("./LandingPageSecuringSector/LandingPageSecuringSector").then(
+      (m) => m.default
+    ),
+  { ssr: false }
+);
+const LandingThreats = dynamic(
+  () => import("./LandingThreats/LandingThreats").then((m) => m.default),
+  { ssr: false }
+);
+const LandingVigileChoose = dynamic(
+  () =>
+    import("./LandingVigileChoose/LandingVigileChoose").then((m) => m.default),
+  { ssr: false }
+);
+const LandingVigileframework = dynamic(
+  () =>
+    import("./LandingVigileframework/LandingVigileframework").then(
+      (m) => m.default
+    ),
+  { ssr: false }
+);
+const OurPartners = dynamic(
+  () => import("./OurPartners/OurPartners").then((m) => m.default),
+  { ssr: false }
+);
+const Whatwedo = dynamic(
+  () => import("./Whatwedo/Whatwedo").then((m) => m.default),
+  { ssr: false }
+);
 
 interface LandingPageClientProps {
   hero: ReactNode;

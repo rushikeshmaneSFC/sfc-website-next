@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/layout/AppShell";
+
+const montserrat = Montserrat({
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://stfox.com";
 
@@ -94,15 +101,6 @@ export default function RootLayout({
             __html: `document.documentElement.style.colorScheme='light'`,
           }}
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-          rel="preload"
-          as="style"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -116,7 +114,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans bg-gray-50 antialiased">
+      <body className={`${montserrat.className} bg-gray-50 antialiased`}>
         <AppShell>{children}</AppShell>
       </body>
     </html>
