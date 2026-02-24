@@ -1,5 +1,15 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import LandingPageClient from "@/components/landing/LandingPageClient";
+import LandingHeroShell from "@/components/landing/LandingHerosection/LandingHeroShell";
+
+const DynamicLandingHerosection = dynamic(
+  () =>
+    import("@/components/landing/LandingHerosection/LandingHerosection").then(
+      (m) => m.default
+    ),
+  { ssr: true }
+);
 
 export const metadata: Metadata = {
   title: "St. Fox - Home",
@@ -19,6 +29,14 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <LandingPageClient />;
+  return (
+    <LandingPageClient
+      hero={
+        <LandingHeroShell>
+          <DynamicLandingHerosection />
+        </LandingHeroShell>
+      }
+    />
+  );
 }
 

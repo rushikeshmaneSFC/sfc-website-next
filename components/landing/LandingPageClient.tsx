@@ -1,7 +1,7 @@
 "use client";
 
+import type { ReactNode } from "react";
 import LandingFearlessly from "./LandingFearlessly/LandingFearlessly";
-import LandingHerosection from "./LandingHerosection/LandingHerosection";
 import LandingInsights from "./LandingInsights/LandingInsights";
 import LandingManagedService from "./LandingManagedService/LandingManagedService";
 import LandingPageSecuringSector from "./LandingPageSecuringSector/LandingPageSecuringSector";
@@ -11,38 +11,22 @@ import LandingVigileframework from "./LandingVigileframework/LandingVigileframew
 import OurPartners from "./OurPartners/OurPartners";
 import Whatwedo from "./Whatwedo/Whatwedo";
 import FlowbiteWrapper from "@/components/layout/flowbite-wrapper";
-import { useEffect, useState } from "react";
 
-export default function LandingPageClient() {
-  const [isMobile, setIsMobile] = useState(false);
+interface LandingPageClientProps {
+  hero: ReactNode;
+}
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const update = () => setIsMobile(window.innerWidth < 768);
-      update();
-      window.addEventListener("resize", update);
-      return () => window.removeEventListener("resize", update);
-    }
-  }, []);
-
-  const customCss = isMobile ? "bg-cover" : "bg-top";
-  const topBg = isMobile
-    ? "/images/Landingpage/mobile-bg-top-img.webp"
-    : "/images/Landingpage/horizontal-scroll-bg.webp";
-
+export default function LandingPageClient({ hero }: LandingPageClientProps) {
   return (
     <FlowbiteWrapper>
       <h1 className="sr-only">
         Cybersecurity Services by Saint Fox Consultancy – Managed Security,
         Cloud & AI Protection
       </h1>
-      <LandingHerosection />
+      {hero}
 
       <div
-        className={`bg-no-repeat pb-9 w-full overflow-hidden 2xl:bg-cover 2xl:bg-right ${customCss}`}
-        style={{
-          backgroundImage: `url("${topBg}")`,
-        }}
+        className="bg-no-repeat pb-9 w-full overflow-hidden 2xl:bg-cover 2xl:bg-right bg-cover bg-[url('/images/Landingpage/mobile-bg-top-img.webp')] md:bg-top md:bg-[url('/images/Landingpage/horizontal-scroll-bg.webp')]"
       >
         <LandingVigileframework />
         <LandingVigileChoose />

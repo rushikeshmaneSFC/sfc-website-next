@@ -11,6 +11,7 @@ import OurCustomer from "../OurCustomer/OurCustomer";
 const LandingHerosection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [animationReady, setAnimationReady] = useState(false);
 
   const heroTexts = [
     {
@@ -31,7 +32,16 @@ const LandingHerosection = () => {
     setCurrentTextIndex(index);
   };
 
+  // Defer carousel start until after first paint - avoids blocking LCP
   useEffect(() => {
+    const id = requestAnimationFrame(() => {
+      setAnimationReady(true);
+    });
+    return () => cancelAnimationFrame(id);
+  }, []);
+
+  useEffect(() => {
+    if (!animationReady) return;
     const timer = setInterval(() => {
       setCurrentTextIndex((prevIndex) =>
         prevIndex === heroTexts.length - 1 ? 0 : prevIndex + 1,
@@ -39,10 +49,10 @@ const LandingHerosection = () => {
     }, 6050);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [animationReady, heroTexts.length]);
 
   return (
-    <div className="flex flex-col justify-center items-center text-[#fff] bg-[url('https://saintfox.azureedge.net/datav2/LandingHerosection_Mobile.webp')] md:bg-[url('https://saintfox.azureedge.net/datav2/bg.webp')] bg-cover bg-center bg-no-repeat lg:w-full w-[100%] 2xl:h-[638px] lg:h-[638px] md:h-auto h-[520px] 2xl:px-40 lg:px-20 md:px-4 2xl:py-0 lg:py-0 md:py-20 pt-24">
+    <>
       <div className="grid 2xl:grid-cols-[50%,50%] lg:grid-cols-[70%,30%] md:grid-cols-[70%,30%] grid-cols-1 text-white gap-4 px-4 max-w-[1920px] w-full justify-center items-center">
         <div className="flex flex-col justify-center gap-4 lg:mt-64 2xl:mt-44 md:mt-24">
           <div className="text-left h-[140px] md:h-[200px] lg:h-[220px] 2xl:h-[240px] relative overflow-hidden flex items-center">
@@ -125,7 +135,7 @@ const LandingHerosection = () => {
         setOpen={setIsModalOpen}
         title="Schedule a Free Assessment"
       />
-    </div>
+    </>
   );
 };
 
