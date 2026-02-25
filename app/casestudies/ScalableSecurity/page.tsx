@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Scalable & Flexible Security Architectures | St. Fox",
     description:
       "Scalable security architectures: CASB, ZTA, SOAR, microservices. By St. Fox.",
-    url: "https://stfox.com/casestudies/ScalableSecurity",
+    url: "https://next.stfox.com/casestudies/ScalableSecurity",
     siteName: "St. Fox",
     type: "article",
   },

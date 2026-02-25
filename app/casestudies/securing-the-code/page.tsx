@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Securing the Code in a Gen AI World | St. Fox",
     description:
       "AI-injected malware, securing the codebase, and secure coding in the Gen AI era. By St. Fox.",
-    url: "https://stfox.com/casestudies/securing-the-code",
+    url: "https://next.stfox.com/casestudies/securing-the-code",
     siteName: "St. Fox",
     type: "article",
   },

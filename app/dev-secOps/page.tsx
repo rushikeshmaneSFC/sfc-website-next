@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "DevSecOps | Managed DevSecOps | St. Fox",
     description:
       "Seamlessly integrate security into your CI/CD pipeline. VIGILE Framework-driven DevSecOps for faster, safer releases.",
-    url: "https://stfox.com/dev-secOps",
+    url: "https://next.stfox.com/dev-secOps",
     siteName: "St. Fox",
     type: "website",
   },

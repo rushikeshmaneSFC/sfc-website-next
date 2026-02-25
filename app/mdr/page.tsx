@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Managed Detection and Response (MDR) | St. Fox",
     description:
       "Real-time Threat Detection, Rapid Response, and Expert Mitigation. St. Fox MDR combines cutting-edge technology and human expertise for comprehensive protection.",
-    url: "https://stfox.com/mdr",
+    url: "https://next.stfox.com/mdr",
     siteName: "St. Fox",
     type: "website",
   },

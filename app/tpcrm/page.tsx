@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Third-Party Cyber Risk Management (TPCRM) | St. Fox",
     description:
       "Comprehensive third-party cyber risk management. End-to-end management to secure your supply chain and protect your organization. Built on the VIGILE Framework.",
-    url: "https://stfox.com/tpcrm",
+    url: "https://next.stfox.com/tpcrm",
     siteName: "St. Fox",
     type: "website",
   },

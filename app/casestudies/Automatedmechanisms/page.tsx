@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Automated Response Mechanisms | St. Fox",
     description:
       "Advanced automated response mechanisms in cybersecurity. By St. Fox.",
-    url: "https://stfox.com/casestudies/Automatedmechanisms",
+    url: "https://next.stfox.com/casestudies/Automatedmechanisms",
     siteName: "St. Fox",
     type: "article",
   },

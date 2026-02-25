@@ -17,7 +17,7 @@ export default function PromptInjectionClient() {
         </div>
 
         <div className="mt-4 flex flex-col gap-y-2">
-          <div className="text-center flex flex-col space-y-2 bg-black bg-opacity-100 bg-[url('https://i0.wp.com/stfox.com/wp-content/uploads/2024/01/MAIN-LOGO-ONLY-W-1.png?fit=1353%2C1009&ssl=1')] bg-center bg-no-repeat bg-cover py-5">
+          <div className="text-center flex flex-col space-y-2 bg-black bg-opacity-100 bg-[url('https://i0.wp.com/next.stfox.com/wp-content/uploads/2024/01/MAIN-LOGO-ONLY-W-1.png?fit=1353%2C1009&ssl=1')] bg-center bg-no-repeat bg-cover py-5">
             <p className="text-[#fff] md:text-2xl text-base font-bold">
               Unveiling the future
             </p>

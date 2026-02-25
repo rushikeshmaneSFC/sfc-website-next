@@ -65,20 +65,38 @@ export default function LandingPageClient({ hero }: LandingPageClientProps) {
       <div
         className="bg-no-repeat pb-9 w-full overflow-hidden 2xl:bg-cover 2xl:bg-right bg-cover bg-[url('/images/Landingpage/mobile-bg-top-img.webp')] md:bg-top md:bg-[url('/images/Landingpage/horizontal-scroll-bg.webp')]"
       >
-        <LandingVigileframework />
-        <LandingVigileChoose />
+        <div className="min-h-[320px] md:min-h-[380px] lg:min-h-[420px] 2xl:min-h-[460px]">
+          <LandingVigileframework />
+        </div>
+        <div className="min-h-[400px] md:min-h-[357px] lg:min-h-[357px]">
+          <LandingVigileChoose />
+        </div>
       </div>
-      <Whatwedo />
+      <div className="min-h-[600px] md:min-h-[900px] lg:min-h-[700px]">
+        <Whatwedo />
+      </div>
 
-      <OurPartners />
+      <div className="min-h-[400px]">
+        <OurPartners />
+      </div>
       <div className="bg-no-repeat bg-cover bg-center object-contain bg-[url('/images/Landingpage/SecuringSector_Bg.jpg')]">
-        <LandingManagedService />
-        <LandingPageSecuringSector />
+        <div className="min-h-[400px] md:min-h-[500px] lg:min-h-[600px] 2xl:min-h-[502px]">
+          <LandingManagedService />
+        </div>
+        <div className="min-h-[350px] md:min-h-[398px] lg:min-h-[398px]">
+          <LandingPageSecuringSector />
+        </div>
       </div>
       <div className="bg-no-repeat bg-cover bg-center object-contain bg-[url('/images/Landingpage/Innovate_Fearlessly_Bg.jpg')]">
-        <LandingThreats />
-        <LandingFearlessly />
-        <LandingInsights />
+        <div className="min-h-[320px] md:min-h-[398px] lg:min-h-[350px]">
+          <LandingThreats />
+        </div>
+        <div className="min-h-[280px] md:min-h-[300px] lg:min-h-[329px]">
+          <LandingFearlessly />
+        </div>
+        <div className="min-h-[350px] md:min-h-[380px] lg:min-h-[400px]">
+          <LandingInsights />
+        </div>
       </div>
     </FlowbiteWrapper>
   );

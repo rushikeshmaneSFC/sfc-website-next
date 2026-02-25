@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Careers | St. Fox",
     description:
       "Crave a career that sparks your soul. Join the St. Fox tribe.",
-    url: "https://stfox.com/careers",
+    url: "https://next.stfox.com/careers",
     siteName: "St. Fox",
     type: "website",
   },

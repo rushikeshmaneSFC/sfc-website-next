@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "SOC Assessment | St. Fox",
     description:
       "Uncover Gaps, Enhance Efficiency, and Fortify Your Security Operations Center for Peak Performance.",
-    url: "https://stfox.com/soc-assessment",
+    url: "https://next.stfox.com/soc-assessment",
     siteName: "St. Fox",
     type: "website",
   },

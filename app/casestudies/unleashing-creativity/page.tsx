@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Unleashing Creativity & Efficiency | St. Fox",
     description:
       "GenAIaaS: creativity, efficiency, and competitive advantage for enterprises. By St. Fox.",
-    url: "https://stfox.com/casestudies/unleashing-creativity",
+    url: "https://next.stfox.com/casestudies/unleashing-creativity",
     siteName: "St. Fox",
     type: "article",
   },

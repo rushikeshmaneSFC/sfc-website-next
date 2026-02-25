@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Intricate world of New age Tech | St. Fox",
     description:
       "The synergy among cybersecurity, AI, data protection, privacy, and cloud computing. By St. Fox.",
-    url: "https://stfox.com/casestudies/intricateworld",
+    url: "https://next.stfox.com/casestudies/intricateworld",
     siteName: "St. Fox",
     type: "article",
   },

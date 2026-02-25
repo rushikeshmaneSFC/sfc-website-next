@@ -102,7 +102,7 @@ export default function SubmissionModal({
                 If you don't receive it, please check your spam folder or reach
                 out to us at{" "}
                 <a
-                  href="mailto:contact@stfox.com"
+                  href="mailto:contact@next.stfox.com"
                   className="text-[#000] font-bold"
                 >
                   contact@stfox

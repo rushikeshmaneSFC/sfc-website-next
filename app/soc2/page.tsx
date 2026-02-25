@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Managed SOC - Security Operations Center | St. Fox",
     description:
       "Proactive threat detection, expert incident response, and autonomous SOC operations to protect your business 24/7. Built on the VIGILE Framework.",
-    url: "https://stfox.com/soc2",
+    url: "https://next.stfox.com/soc2",
     siteName: "St. Fox",
     type: "website",
   },

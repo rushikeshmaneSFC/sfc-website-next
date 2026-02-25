@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Blog & Insights | Vigile",
     description:
       "Blog and insights on cybersecurity, AI, and security operations.",
-    url: "https://stfox.com/casestudies",
+    url: "https://next.stfox.com/casestudies",
     siteName: "St. Fox",
     type: "website",
   },

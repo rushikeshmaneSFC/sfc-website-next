@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "EU adopts a new AI law | St. Fox",
     description:
       "EU AI Act: safeguards, bans, law enforcement, high-risk systems, SMEs. By St. Fox.",
-    url: "https://stfox.com/casestudies/EUAIlaw",
+    url: "https://next.stfox.com/casestudies/EUAIlaw",
     siteName: "St. Fox",
     type: "article",
   },

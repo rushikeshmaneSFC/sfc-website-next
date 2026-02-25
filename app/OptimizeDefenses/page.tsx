@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Optimize Defenses | Red, Purple & Blue Teaming | St. Fox",
     description:
       "Comprehensive Red, Purple, and Blue Teaming for enterprise-grade security. St. Fox helps you simulate, collaborate, and strengthen defenses against advanced threats.",
-    url: "https://stfox.com/OptimizeDefenses",
+    url: "https://next.stfox.com/OptimizeDefenses",
     siteName: "St. Fox",
     type: "website",
   },

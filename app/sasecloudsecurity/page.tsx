@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "SASE Cloud Security | Managed Cloud Security | St. Fox",
     description:
       "Comprehensive cloud security built on the VIGILE Framework. CSPM, CWPP, and multi-cloud support.",
-    url: "https://stfox.com/sasecloudsecurity",
+    url: "https://next.stfox.com/sasecloudsecurity",
     siteName: "St. Fox",
     type: "website",
   },

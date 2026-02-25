@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Navigating the Next Frontier: The State of Data Centers in India | St. Fox",
     description:
       "Data centers in India: landscape, challenges, and how organizations adapt. By St. Fox.",
-    url: "https://stfox.com/casestudies/navigating-frontier",
+    url: "https://next.stfox.com/casestudies/navigating-frontier",
     siteName: "St. Fox",
     type: "article",
   },

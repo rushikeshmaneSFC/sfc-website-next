@@ -354,7 +354,7 @@ export default function SecondContainer() {
         <p className="my-8">
           Individuals have the right to access, correct, amend, or delete their
           personal data. Requests can be submitted to our DPO via
-          legal@stfox.com with &quot;PRIVACY POLICY&quot; in the subject line.
+          legal@next.stfox.com with &quot;PRIVACY POLICY&quot; in the subject line.
         </p>
         <p className="my-8">
           Updates to the Privacy Policy Statement and Notification of Changes
@@ -383,7 +383,7 @@ export default function SecondContainer() {
           If you have any questions about this Privacy Policy, please contact
           us:
         </p>
-        <p>By email:legal@stfox.com &quot;PRIVACY POLICY&quot; in the subject line</p>
+        <p>By email:legal@next.stfox.com &quot;PRIVACY POLICY&quot; in the subject line</p>
       </div>
     </Wrapper>
   );

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Data Loss Prevention (DLP) | St. Fox",
     description:
       "Protect sensitive data, prevent unauthorized access, and ensure compliance with expert DLP solutions.",
-    url: "https://stfox.com/dlp",
+    url: "https://next.stfox.com/dlp",
     siteName: "St. Fox",
     type: "website",
   },

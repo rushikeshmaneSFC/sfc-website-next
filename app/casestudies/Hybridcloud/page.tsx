@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Embracing the Hybrid Cloud | St. Fox",
     description:
       "Hybrid cloud with microservices, CI/CD, DevSecOps. By St. Fox.",
-    url: "https://stfox.com/casestudies/Hybridcloud",
+    url: "https://next.stfox.com/casestudies/Hybridcloud",
     siteName: "St. Fox",
     type: "article",
   },

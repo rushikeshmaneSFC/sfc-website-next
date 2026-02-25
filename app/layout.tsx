@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/layout/AppShell";
+import ConsentProvider from "@/components/consent/ConsentProvider";
 
 const montserrat = Montserrat({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
   display: "swap",
+  adjustFontFallback: true,
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://stfox.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://next.stfox.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -114,8 +116,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${montserrat.className} bg-gray-50 antialiased`}>
+      <body className={`${montserrat.className} font-sans bg-gray-50 antialiased`}>
         <AppShell>{children}</AppShell>
+        <ConsentProvider />
       </body>
     </html>
   );

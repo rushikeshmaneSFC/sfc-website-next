@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "ISO 27001 Certification & Audit Services | St. Fox",
     description:
       "Streamline Compliance, Strengthen Security, and Build Trust with ISO 27001 Certification. St. Fox provides comprehensive ISO audit support including gap analysis, documentation, and certification preparation.",
-    url: "https://stfox.com/iso",
+    url: "https://next.stfox.com/iso",
     siteName: "St. Fox",
     type: "website",
   },

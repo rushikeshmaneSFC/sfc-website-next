@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Managed Services | Managed Cybersecurity | St. Fox",
     description:
       "Managed Identity, SOC, MDR, Cloud Security, SASE, Email Security, and Firewall services.",
-    url: "https://stfox.com/managed-services",
+    url: "https://next.stfox.com/managed-services",
     siteName: "St. Fox",
     type: "website",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "TikTok Banned Reasons | St. Fox",
     description:
       "Global bans and restrictions on TikTok. Privacy, security, and national security concerns. By St. Fox.",
-    url: "https://stfox.com/casestudies/tiktok",
+    url: "https://next.stfox.com/casestudies/tiktok",
     siteName: "St. Fox",
     type: "article",
   },

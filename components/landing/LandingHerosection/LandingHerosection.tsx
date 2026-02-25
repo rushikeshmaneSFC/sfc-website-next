@@ -115,6 +115,8 @@ const LandingHerosection = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 0.5 }}
+              width={400}
+              height={400}
               className={`hidden md:block mt-5 lg:mt-0
                 ${
                   currentTextIndex === 2
@@ -130,7 +132,7 @@ const LandingHerosection = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center lg:mt-0 2xl:mt-5 md:mt-0">
+      <div className="w-full flex justify-center items-center lg:mt-0 2xl:mt-5 md:mt-0 min-h-[100px] md:min-h-[200px] lg:min-h-[277px]">
         <DynamicOurCustomer />
       </div>
 

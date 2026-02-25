@@ -3,7 +3,6 @@
 
 import { HiMenuAlt1, HiSearch, HiX } from "react-icons/hi";
 import { useSidebarContext } from "@/context/SidebarContext";
-import isSmallScreen from "@/helpers/is-small-screen";
 import ReusableBtn from "@/components/atoms/ReusableBtn";
 import {
   FaArrowRight,
@@ -21,8 +20,9 @@ import Link from "next/link";
 const ExampleNavbar: FC = function () {
   const { isPageWithSidebar } = useSidebarContext();
 
-  const [logoSrc, setLogoSrc] = useState("/images/home/Stfoxlogo.webp"); 
+  const [logoSrc, setLogoSrc] = useState("/images/home/Stfoxlogo.webp");
   const [scrolled, setScrolled] = useState(false);
+  const [isSmallScreenState, setIsSmallScreenState] = useState(false);
   const [activeItem, setActiveItem] = useState("");
   const [navbarToggle, setNavbarToggle] = useState(false);
   const [resource, setResource] = useState(false);
@@ -86,30 +86,35 @@ const ExampleNavbar: FC = function () {
       setScrolled(isScrolled);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  useEffect(() => {
+    const updateSmallScreen = () => {
+      setIsSmallScreenState(window.innerWidth < 768);
+    };
+    updateSmallScreen();
+    window.addEventListener("resize", updateSmallScreen);
+    return () => window.removeEventListener("resize", updateSmallScreen);
+  }, []);
 
 
-const updateLogoSrc = () => {
-  if (
-    whiteBackgroundPages.includes(pathname) ||
-    scrolled ||
-    isSmallScreen()
-  ) {
-    setLogoSrc("/images/home/Stfoxlogo.webp");
-  } else {
-    setLogoSrc("/images/home/StfoxLogo1.webp");
-  }
-};
 
-
-useEffect(() => {
-  updateLogoSrc();
-}, [pathname, scrolled]);
+  useEffect(() => {
+    if (
+      whiteBackgroundPages.includes(pathname) ||
+      scrolled ||
+      isSmallScreenState
+    ) {
+      setLogoSrc("/images/home/Stfoxlogo.webp");
+    } else {
+      setLogoSrc("/images/home/StfoxLogo1.webp");
+    }
+  }, [pathname, scrolled, isSmallScreenState]);
 
   const services = {
     managedServices: [
@@ -788,7 +793,7 @@ useEffect(() => {
         className={`flex justify-center items-center fixed top-0 left-0 w-full z-50 transition-colors duration-100 ${
           scrolled
             ? "bg-white dark:bg-gray-800"
-            : isSmallScreen()
+            : isSmallScreenState
               ? "bg-white "
               : `bg-transparent ${
                   whiteBackgroundPages.includes(pathname)

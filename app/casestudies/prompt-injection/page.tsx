@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Prompt Injection – Practical Mitigations | St. Fox",
     description:
       "Practical implementable mitigation steps for prompt injection. Security by design for LLM applications.",
-    url: "https://stfox.com/casestudies/prompt-injection",
+    url: "https://next.stfox.com/casestudies/prompt-injection",
     siteName: "St. Fox",
     type: "article",
   },

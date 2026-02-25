@@ -90,7 +90,7 @@ export default function SecondContainer() {
         </div>
         <div className="flex justify-center items-center my-8">
           <a
-            href="https://careers.stfox.com/jobs/Careers"
+            href="https://careers.next.stfox.com/jobs/Careers"
             target="_blank"
             rel="noopener noreferrer"
           >

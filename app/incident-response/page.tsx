@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Incident Response | IR Services | St. Fox",
     description:
       "Respond, recover, and prevent with St. Fox Incident Response services.",
-    url: "https://stfox.com/incident-response",
+    url: "https://next.stfox.com/incident-response",
     siteName: "St. Fox",
     type: "website",
   },

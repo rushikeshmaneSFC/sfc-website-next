@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Bridging the Language Divide: The Quest for Linguistic Equity in AI | St. Fox",
     description:
       "Linguistic equity in AI: bias, non-English models, and language-agnostic future. By St. Fox.",
-    url: "https://stfox.com/casestudies/Linguisticequity",
+    url: "https://next.stfox.com/casestudies/Linguisticequity",
     siteName: "St. Fox",
     type: "article",
   },

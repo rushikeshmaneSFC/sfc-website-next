@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Corporate Sustainability | St. Fox",
     description:
       "Beyond profit, purpose. Building a better future through ESG and sustainability.",
-    url: "https://stfox.com/corporate-sustainability",
+    url: "https://next.stfox.com/corporate-sustainability",
     siteName: "St. Fox",
     type: "website",
   },

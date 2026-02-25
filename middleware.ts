@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get("host") || "";
 
-  // Redirect www to non-www (e.g. www.stfox.com → stfox.com)
+  // Redirect www to non-www (e.g. www.next.stfox.com → next.stfox.com)
   if (hostname.startsWith("www.")) {
     url.host = hostname.replace(/^www\./, "");
     url.protocol = request.nextUrl.protocol;

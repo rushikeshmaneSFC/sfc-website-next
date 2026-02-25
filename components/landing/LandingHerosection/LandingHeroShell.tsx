@@ -12,7 +12,7 @@ export default function LandingHeroShell({
 }) {
   return (
     <div
-      className="flex flex-col justify-center items-center text-[#fff] bg-[url('https://saintfox.azureedge.net/datav2/LandingHerosection_Mobile.webp')] md:bg-[url('https://saintfox.azureedge.net/datav2/bg.webp')] bg-cover bg-center bg-no-repeat lg:w-full w-[100%] 2xl:h-[638px] lg:h-[638px] md:h-auto h-[520px] 2xl:px-40 lg:px-20 md:px-4 2xl:py-0 lg:py-0 md:py-20 pt-24"
+      className="flex flex-col justify-center items-center text-[#fff] bg-[url('https://saintfox.azureedge.net/datav2/LandingHerosection_Mobile.webp')] md:bg-[url('https://saintfox.azureedge.net/datav2/bg.webp')] bg-cover bg-center bg-no-repeat lg:w-full w-[100%] h-[520px] min-h-[520px] md:min-h-[580px] md:h-auto lg:h-[638px] lg:min-h-[638px] 2xl:h-[638px] 2xl:min-h-[638px] 2xl:px-40 lg:px-20 md:px-4 2xl:py-0 lg:py-0 md:py-20 pt-24"
     >
       {children}
     </div>

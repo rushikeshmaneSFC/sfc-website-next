@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Protecting Our Digital World | St. Fox",
     description:
       "MFA, updates, secure Wi-Fi, and Zero Trust for individuals. By Manoj Nair.",
-    url: "https://stfox.com/casestudies/protecting-digital-world",
+    url: "https://next.stfox.com/casestudies/protecting-digital-world",
     siteName: "St. Fox",
     type: "article",
   },

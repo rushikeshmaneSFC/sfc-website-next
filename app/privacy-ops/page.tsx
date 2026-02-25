@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Privacy Ops | Data Privacy Compliance | St. Fox",
     description:
       "End-to-end privacy operations for seamless compliance. VIGILE Framework for data privacy.",
-    url: "https://stfox.com/privacy-ops",
+    url: "https://next.stfox.com/privacy-ops",
     siteName: "St. Fox",
     type: "website",
   },

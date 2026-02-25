@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "vCISO | Virtual CISO Services | St. Fox",
     description:
       "Strategic guidance and oversight to strengthen your cybersecurity posture without a full-time CISO.",
-    url: "https://stfox.com/vciso",
+    url: "https://next.stfox.com/vciso",
     siteName: "St. Fox",
     type: "website",
   },

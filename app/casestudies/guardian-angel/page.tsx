@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "The Guardian Angel in the Cloud | St. Fox",
     description:
       "CISOaaS: strategic security leadership for mid-sized businesses. By St. Fox.",
-    url: "https://stfox.com/casestudies/guardian-angel",
+    url: "https://next.stfox.com/casestudies/guardian-angel",
     siteName: "St. Fox",
     type: "article",
   },

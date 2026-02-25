@@ -80,7 +80,7 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
     }
     try {
       const response = await fetch(
-        "https://stfox.com/api/customers/subscribe",
+        "https://next.stfox.com/api/customers/subscribe",
         {
           method: "POST",
           headers: {
@@ -213,10 +213,10 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
           <div className="flex flex-col gap-1.5 px-2 lg:px-0 md:px-0">
             <p className="text-[13px] md:text-[14px] font-semibold ">SALES</p>
             <a
-              href="mailto:sales@stfox.com"
+              href="mailto:sales@next.stfox.com"
               className="text-[13px] md:text-[14px] text-white hover:underline"
             >
-              sales@stfox.com
+              sales@next.stfox.com
             </a>
             <a
               href="tel:1800-26-ST-FOX"
@@ -248,6 +248,16 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
       <div className="mx-4 md:mx-24  mt-4 border-t border-gray-700 pt-4 text-center text-xs text-gray-400 2xl:mx-36">
         <div className="flex flex-col md:hidden gap-4">
           <div className="flex flex-wrap justify-center items-center gap-4">
+            <button
+              type="button"
+              onClick={() =>
+                window.dispatchEvent(new CustomEvent("open-cookie-preferences"))
+              }
+              className="hover:underline text-gray-400 bg-transparent border-none cursor-pointer p-0 text-xs"
+              aria-label="Open cookie preferences"
+            >
+              Cookie Preferences
+            </button>
             <Link href="/privacy-policy" className="hover:underline">
               Privacy Policy
             </Link>
@@ -294,6 +304,16 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
             All rights reserved
           </p>
           <div className="flex gap-4">
+            <button
+              type="button"
+              onClick={() =>
+                window.dispatchEvent(new CustomEvent("open-cookie-preferences"))
+              }
+              className="hover:underline text-gray-400 bg-transparent border-none cursor-pointer p-0 text-xs"
+              aria-label="Open cookie preferences"
+            >
+              Cookie Preferences
+            </button>
             <Link href="/privacy-policy" className="hover:underline">
               Privacy Policy
             </Link>

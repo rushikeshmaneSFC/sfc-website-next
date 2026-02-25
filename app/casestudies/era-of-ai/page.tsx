@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Being Human in era of AI | St. Fox",
     description:
       "Reference monitors, Trusted Computing Base for AI, and Human Platform Module (HPM). By Rajiv Bahl.",
-    url: "https://stfox.com/casestudies/era-of-ai",
+    url: "https://next.stfox.com/casestudies/era-of-ai",
     siteName: "St. Fox",
     type: "article",
   },

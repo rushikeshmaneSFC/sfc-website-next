@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "St. Fox Cisco Secure Access | CSSE | St. Fox",
     description:
       "Cloud-first. Cross-platform. Automated. Streamlined Cisco Secure Access deployment.",
-    url: "https://stfox.com/csse",
+    url: "https://next.stfox.com/csse",
     siteName: "St. Fox",
     type: "website",
   },
