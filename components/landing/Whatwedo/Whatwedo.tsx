@@ -118,6 +118,7 @@ export default function Whatwedo() {
               <a
                 href={current.link || "#"}
                 className="inline-flex items-center text-white font-medium group"
+                aria-label={current.learnMoreAriaLabel || `Learn more about ${current.title}`}
               >
                 Learn more
                 <IoIosArrowForward className="text-[13px] ml-2" />

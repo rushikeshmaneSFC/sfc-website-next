@@ -129,6 +129,7 @@ const tabData = [
       "Safeguard your AI models and data pipelines with enterprise-grade security. \n\n We implement robust governance frameworks, real-time threat detection, and regulatory compliance controls to protect against evolving AI-specific risks. \n\nFrom training to deployment, we ensure your AI systems remain secure, reliable, and trustworthy.",
     image: "/images/Landingpage/SecurityAI.webp",
     link: "/ai-security",
+    learnMoreAriaLabel: "Learn more about Security for AI",
   },
   {
     icon: "/images/Landingpage/user-circle.webp",
@@ -138,6 +139,7 @@ const tabData = [
       "Our Managed Services streamline your cloud operations, reduce overheads, and ensure seamless performance at scale.  \n\nWe provide 24x7 monitoring, proactive maintenance, and rapid issue resolution to keep your infrastructure running smoothly.  \n\nWith us, your team can focus on innovation while we handle the complexity.",
     image: "/images/Landingpage/Managedservice.webp",
     link: "/managed-services",
+    learnMoreAriaLabel: "Learn more about Managed Services",
   },
   {
     icon: "/images/Landingpage/user-circle.webp",
@@ -147,6 +149,7 @@ const tabData = [
       "Our Specialized Services tackle complex, mission-critical challenges across cloud, cybersecurity and regulatory compliance.\n\n Led by seasoned experts, we deliver tailored strategies and hands-on execution to meet your unique needs.\n\nFrom security audits to compliance mandates or custom architectures—we've got you covered.",
     image: "/images/Landingpage/Specializedservice.webp",
     link: "/SpecializedService",
+    learnMoreAriaLabel: "Learn more about Specialized Services",
   },
   {
     icon: "/images/Landingpage/user-circle.webp",
@@ -156,6 +159,7 @@ const tabData = [
       "Transform your data into a strategic asset with our end-to-end data services. \n\nWe help you harness advanced analytics, build modern data platforms, and implement robust governance frameworks.\n\nFrom data integrity to actionable insights, we ensure your data drives real business value.",
     image: "/images/Landingpage/Dataservice.webp",
     link: "/data-services",
+    learnMoreAriaLabel: "Learn more about Data Services",
   },
   {
     icon: "/images/Landingpage/user-circle.webp",
@@ -165,6 +169,7 @@ const tabData = [
       "Accelerate innovation with cloud-native architectures built for performance, security, and scale.\n\nOur Cloud Engineering services help you design, deploy, and optimize infrastructure tailored to your business goals.\n\nWhether you're migrating to the cloud or modernizing existing systems, we ensure a seamless, future-ready transformation.",
     image: "/images/Landingpage/Cloudengineering.webp",
     link: "/cloud-engineering",
+    learnMoreAriaLabel: "Learn more about Cloud Engineering",
   },
 ];
 

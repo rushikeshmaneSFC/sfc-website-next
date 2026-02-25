@@ -77,7 +77,7 @@ export function trackPageView(path: string): void {
 
   window.gtag("event", "page_view", {
     page_path: path || "/",
-    page_title: typeof document !== "undefined" ? document.title : "",
+    page_title: document?.title || "",
   });
 }
 
