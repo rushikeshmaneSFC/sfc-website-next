@@ -113,47 +113,50 @@ export default function CookieConsent() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="fixed z-[9999] rounded-2xl border border-[#1A3F7E]/50 bg-gradient-to-b from-[#0a1628] to-[#060d16] p-4 md:p-5 shadow-[0_8px_32px_rgba(0,0,0,0.35),0_0_0_1px_rgba(26,63,126,0.25),0_0_20px_-2px_rgba(59,115,204,0.2)] md:max-w-[600px] bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6"
+          className="fixed bottom-0 left-0 right-0 w-full z-[9999] bg-white text-black border-t border-black/10 shadow-[0_-6px_24px_rgba(0,0,0,0.08)] px-4 py-3 md:px-6 md:py-4 pointer-events-auto"
         >
-          <h2
-            id="cookie-consent-title"
-            className="text-base md:text-lg font-semibold text-white mb-1.5"
-          >
-            We respect your privacy
-          </h2>
-          <p
-            id="cookie-consent-desc"
-            className="text-sm text-gray-300 leading-relaxed mb-4"
-          >
-           We use cookies to improve site functionality and understand how our website is used. This helps us enhance your experience.
-          </p>
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="flex-1 min-w-0">
+              <h2
+                id="cookie-consent-title"
+                className="text-sm md:text-base font-semibold text-black"
+              >
+                We respect your privacy
+              </h2>
+              <p
+                id="cookie-consent-desc"
+                className="text-xs md:text-sm text-black/70 leading-relaxed mt-0.5"
+              >
+                We use cookies to improve site functionality and understand how our website is used. This helps us enhance your experience.
+              </p>
+            </div>
 
-          <div className="flex flex-col sm:flex-row gap-2.5 mb-3">
-            <button
-              type="button"
-              onClick={handleAccept}
-              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#3B73CC] to-[#1A3F7E] text-white font-medium text-sm hover:opacity-95 transition-opacity focus:outline-none focus:ring-2 focus:ring-[#3B73CC] focus:ring-offset-2 focus:ring-offset-[#060d16]"
-              aria-label="Accept analytics cookies"
-            >
-              Accept analytics
-            </button>
-            <button
-              type="button"
-              onClick={handleReject}
-              className="px-4 py-2.5 rounded-xl border border-gray-500/60 text-gray-300 font-medium text-sm hover:bg-white/5 hover:border-gray-400/60 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-[#060d16]"
-              aria-label="Reject analytics cookies"
-            >
-              Reject
-            </button>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 sm:shrink-0">
+              <button
+                type="button"
+                onClick={handleAccept}
+                className="px-4 py-2.5 rounded-lg bg-black text-white font-medium text-sm hover:bg-black/90 transition-colors focus:outline-none focus:ring-2 focus:ring-black/40 focus:ring-offset-2 focus:ring-offset-white"
+                aria-label="Accept analytics cookies"
+              >
+                Accept analytics
+              </button>
+              <button
+                type="button"
+                onClick={handleReject}
+                className="px-4 py-2.5 rounded-lg border border-black/20 text-black font-medium text-sm bg-white hover:bg-black/5 transition-colors focus:outline-none focus:ring-2 focus:ring-black/40 focus:ring-offset-2 focus:ring-offset-white"
+                aria-label="Reject analytics cookies"
+              >
+                Reject
+              </button>
+              <Link
+                href="/privacy-policy"
+                className="text-xs text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-black/40 focus:ring-offset-2 focus:ring-offset-white rounded inline-block"
+                aria-label="Learn more about our privacy policy"
+              >
+                Learn more
+              </Link>
+            </div>
           </div>
-
-          <Link
-            href="/privacy-policy"
-            className="text-xs text-[#72A7FB] hover:underline focus:outline-none focus:ring-2 focus:ring-[#72A7FB] focus:ring-offset-2 focus:ring-offset-[#060d16] rounded inline-block"
-            aria-label="Learn more about our privacy policy"
-          >
-            Learn more
-          </Link>
         </motion.div>
       )}
     </AnimatePresence>
