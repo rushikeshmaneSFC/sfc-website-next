@@ -21,12 +21,12 @@ function SecondContainer() {
           The following terms and conditions (the &quot;Terms of Use&quot;) govern your
           use of the St. Fox website including{" "}
           <a
-            href="http://www.next.stfox.com"
+            href="http://www.stfox.com"
             className="text-[#4169e1]"
             target="_blank"
             rel="noopener noreferrer"
           >
-            http://www.next.stfox.com
+            http://www.stfox.com
           </a>
           ,{" "}
           <a
@@ -55,12 +55,12 @@ function SecondContainer() {
             <li>
               &quot;Site&quot; refers to the website located at{" "}
               <a
-                href="http://www.next.stfox.com"
+                href="http://www.stfox.com"
                 className="text-[#4169e1]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                http://www.next.stfox.com
+                http://www.stfox.com
               </a>{" "}
               and{" "}
               <a
@@ -187,10 +187,10 @@ function SecondContainer() {
         <p>
           By email:{" "}
           <a
-            href="mailto:legal@next.stfox.com?subject=PRIVACY POLICY"
+            href="mailto:legal@stfox.com?subject=PRIVACY POLICY"
             className="text-[#4169e1]"
           >
-            legal@next.stfox.com
+            legal@stfox.com
           </a>{" "}
           with &quot;PRIVACY POLICY&quot; in the subject line
         </p>

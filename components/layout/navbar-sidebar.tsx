@@ -213,10 +213,10 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
           <div className="flex flex-col gap-1.5 px-2 lg:px-0 md:px-0">
             <p className="text-[13px] md:text-[14px] font-semibold ">SALES</p>
             <a
-              href="mailto:sales@next.stfox.com"
+              href="mailto:sales@stfox.com"
               className="text-[13px] md:text-[14px] text-white hover:underline"
             >
-              sales@next.stfox.com
+              sales@stfox.com
             </a>
             <a
               href="tel:1800-26-ST-FOX"
