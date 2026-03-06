@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Managed Firewall | SASE Firewall Management | St. Fox",
     description:
       "Real-time threat monitoring, advanced threat detection, and firewall policy management. Powered by the VIGILE Framework.",
-    url: "https://next.stfox.com/managed",
+    url: "https://stfox.com/managed",
     siteName: "St. Fox",
     type: "website",
   },

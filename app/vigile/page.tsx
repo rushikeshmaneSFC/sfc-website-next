@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "VIGILE Framework - Innovate Fearlessly, Protect Relentlessly",
     description:
       "The VIGILE Framework by St. Fox is a strategic approach to cybersecurity that ensures continuous protection, innovation, and compliance for CIOs, DPOs, and CISOs.",
-    url: "https://next.stfox.com/vigile",
+    url: "https://stfox.com/vigile",
     siteName: "St. Fox",
     type: "website",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "VAPT Services - Vulnerability Assessment & Penetration Testing",
     description:
       "St. Fox VAPT Services combine automated tools and expert-driven testing to identify, assess and remediate vulnerabilities across your IT environment.",
-    url: "https://next.stfox.com/vapt",
+    url: "https://stfox.com/vapt",
     siteName: "St. Fox",
     type: "website",
   },

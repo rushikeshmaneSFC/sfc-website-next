@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "CLUTCH Powered by St. Fox | Datasheet",
     description:
       "Tailored, cloud-first security & engineering solutions for the modern digital enterprise.",
-    url: "https://next.stfox.com/clutch-datasheet",
+    url: "https://stfox.com/clutch-datasheet",
     siteName: "St. Fox",
     type: "website",
   },

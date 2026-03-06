@@ -80,7 +80,7 @@ const MainContentFooter: FC<{ className?: string }> = ({}) => {
     }
     try {
       const response = await fetch(
-        "https://next.stfox.com/api/customers/subscribe",
+        "https://stfox.com/api/customers/subscribe",
         {
           method: "POST",
           headers: {

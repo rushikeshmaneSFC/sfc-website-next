@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "AI for India | St. Fox",
     description:
       "Strategic use of AI budget for India: R&D, healthcare, agriculture, education. By St. Fox.",
-    url: "https://next.stfox.com/casestudies/AIforindia",
+    url: "https://stfox.com/casestudies/AIforindia",
     siteName: "St. Fox",
     type: "article",
   },

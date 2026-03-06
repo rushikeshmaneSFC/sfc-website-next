@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "SOC 2 Compliance & Assessment Services | St. Fox",
     description:
       "Build Customer Trust and Meet Compliance Standards with Expert SOC 2 Guidance. St. Fox provides end-to-end SOC 2 compliance support including gap analysis, risk assessment, policy development, and audit preparation.",
-    url: "https://next.stfox.com/soc",
+    url: "https://stfox.com/soc",
     siteName: "St. Fox",
     type: "website",
   },

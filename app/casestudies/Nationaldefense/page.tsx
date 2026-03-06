@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "National Defense in Cyberspace | St. Fox",
     description:
       "Comprehensive strategy for national defense in cyberspace. By St. Fox.",
-    url: "https://next.stfox.com/casestudies/Nationaldefense",
+    url: "https://stfox.com/casestudies/Nationaldefense",
     siteName: "St. Fox",
     type: "article",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Data Services | St. Fox",
     description:
       "Proactive Security, Compliance, and Risk Management Built for Resilience, Delivered by Experts.",
-    url: "https://next.stfox.com/data-services",
+    url: "https://stfox.com/data-services",
     siteName: "St. Fox",
     type: "website",
   },

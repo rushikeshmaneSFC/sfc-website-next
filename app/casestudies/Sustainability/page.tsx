@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "How Tech can expedite Sustainability | St. Fox",
     description:
       "Bridging the digital and green divide. By St. Fox.",
-    url: "https://next.stfox.com/casestudies/Sustainability",
+    url: "https://stfox.com/casestudies/Sustainability",
     siteName: "St. Fox",
     type: "article",
   },

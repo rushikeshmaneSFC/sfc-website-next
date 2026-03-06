@@ -11,7 +11,7 @@ const montserrat = Montserrat({
   adjustFontFallback: true,
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://next.stfox.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://stfox.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "/images/stfox-favicon.png",
+    apple: "/images/stfox-favicon.png",
   },
   manifest: "/manifest.json",
 };

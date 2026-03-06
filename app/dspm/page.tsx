@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Data Security Posture Management (DSPM) | St. Fox",
     description:
       "Discover risks, protect sensitive data, and ensure compliance with expert DSPM solutions.",
-    url: "https://next.stfox.com/dspm",
+    url: "https://stfox.com/dspm",
     siteName: "St. Fox",
     type: "website",
   },

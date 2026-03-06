@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "About Us | St. Fox Tribe",
     description:
       "United by Purpose. Strengthened by Expertise. Inspired by Innovation.",
-    url: "https://next.stfox.com/about-us",
+    url: "https://stfox.com/about-us",
     siteName: "St. Fox",
     type: "website",
   },

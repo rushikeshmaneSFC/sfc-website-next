@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Democratic Elections and AI | St. Fox",
     description:
       "Navigating the digital wave: AI, deepfakes, and democratic elections. Strategies for mitigation and a call to action.",
-    url: "https://next.stfox.com/casestudies/democratic-election",
+    url: "https://stfox.com/casestudies/democratic-election",
     siteName: "St. Fox",
     type: "article",
   },

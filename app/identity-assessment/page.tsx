@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Identity Assessment | IAM Evaluation | St. Fox",
     description:
       "Strengthen identity security across your organization. St. Fox Identity Assessment provides comprehensive IAM evaluation guided by the VIGILE Framework.",
-    url: "https://next.stfox.com/identity-assessment",
+    url: "https://stfox.com/identity-assessment",
     siteName: "St. Fox",
     type: "website",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "AI Integration & What could go wrong | St. Fox",
     description:
       "AI in cybersecurity: optimization of attacks, malware creation, and addressing challenges. By St. Fox.",
-    url: "https://next.stfox.com/casestudies/AIIntegration",
+    url: "https://stfox.com/casestudies/AIIntegration",
     siteName: "St. Fox",
     type: "article",
   },

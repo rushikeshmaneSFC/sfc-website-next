@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Navigating the Crossroads | St. Fox",
     description:
       "Why data privacy, protection, and compliance matter. By St. Fox.",
-    url: "https://next.stfox.com/casestudies/Crossroads",
+    url: "https://stfox.com/casestudies/Crossroads",
     siteName: "St. Fox",
     type: "article",
   },

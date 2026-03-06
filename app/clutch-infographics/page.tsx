@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "CLUTCH Infographics | St. Fox",
     description:
       "Cisco Secure Access capability infographics and feature overview.",
-    url: "https://next.stfox.com/clutch-infographics",
+    url: "https://stfox.com/clutch-infographics",
     siteName: "St. Fox",
     type: "website",
   },

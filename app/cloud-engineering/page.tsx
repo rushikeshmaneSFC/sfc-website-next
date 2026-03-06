@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Cloud Engineering | St. Fox",
     description:
       "Cloud done right. Hybrid cloud, security, orchestration, and partnership.",
-    url: "https://next.stfox.com/cloud-engineering",
+    url: "https://stfox.com/cloud-engineering",
     siteName: "St. Fox",
     type: "website",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Cloud Security Posture Assessment (CSPA) | St. Fox",
     description:
       "Identify Risks, Mitigate Vulnerabilities, and Enhance Your Cloud Security Posture. St. Fox provides comprehensive cloud security evaluation aligned with the VIGILE Framework.",
-    url: "https://next.stfox.com/cloud-security",
+    url: "https://stfox.com/cloud-security",
     siteName: "St. Fox",
     type: "website",
   },

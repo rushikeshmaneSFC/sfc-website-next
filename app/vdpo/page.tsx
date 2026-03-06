@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "vDPO | Virtual Data Protection Officer | St. Fox",
     description:
       "Simplified data protection with on-demand expertise. VIGILE Framework for data privacy.",
-    url: "https://next.stfox.com/vdpo",
+    url: "https://stfox.com/vdpo",
     siteName: "St. Fox",
     type: "website",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Managed Identity Solutions | St. Fox",
     description:
       "Reimagine identity security with comprehensive, proactive, and scalable solutions. Secure your systems, empower your users, and enhance compliance.",
-    url: "https://next.stfox.com/managed-identity",
+    url: "https://stfox.com/managed-identity",
     siteName: "St. Fox",
     type: "website",
   },

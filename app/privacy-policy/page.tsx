@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | St. Fox",
     description:
       "How we collect, use, and protect your personal information.",
-    url: "https://next.stfox.com/privacy-policy",
+    url: "https://stfox.com/privacy-policy",
     siteName: "St. Fox",
     type: "website",
   },

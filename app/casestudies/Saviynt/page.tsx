@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Saviynt Partners with St. Fox for Identity Ecosystem in India | St. Fox",
     description:
       "Strategic collaboration for modern identity solutions: ISPM, IGA, JITA, PAM. By Saviynt Press Team.",
-    url: "https://next.stfox.com/casestudies/Saviynt",
+    url: "https://stfox.com/casestudies/Saviynt",
     siteName: "St. Fox",
     type: "article",
   },

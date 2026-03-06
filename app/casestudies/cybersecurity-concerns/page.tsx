@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Cybersecurity Concerns and Preparedness for the Paris 2024 Olympics | St. Fox",
     description:
       "Comprehensive cybersecurity approach for Paris 2024 Olympics: threat detection, supply chain security, IoT, and continuous monitoring.",
-    url: "https://next.stfox.com/casestudies/cybersecurity-concerns",
+    url: "https://stfox.com/casestudies/cybersecurity-concerns",
     siteName: "St. Fox",
     type: "article",
   },

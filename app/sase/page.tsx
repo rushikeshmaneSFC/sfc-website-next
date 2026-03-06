@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Managed SASE - Secure Access Service Edge | St. Fox",
     description:
       "Revolutionize access security with St. Fox Managed SASE. Integrates networking and security into a unified service for secure, fast, and reliable access.",
-    url: "https://next.stfox.com/sase",
+    url: "https://stfox.com/sase",
     siteName: "St. Fox",
     type: "website",
   },

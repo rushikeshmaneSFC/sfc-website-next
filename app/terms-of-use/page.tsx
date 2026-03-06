@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Terms of Use | St. Fox",
     description:
       "Terms and conditions governing your use of the St. Fox website.",
-    url: "https://next.stfox.com/terms-of-use",
+    url: "https://stfox.com/terms-of-use",
     siteName: "St. Fox",
     type: "website",
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "AI Attack Mitigation | St. Fox",
     description:
       "Proactive and intelligent cybersecurity: AI threats, behavioral security, and human consultants. By St. Fox.",
-    url: "https://next.stfox.com/casestudies/attack-migitation",
+    url: "https://stfox.com/casestudies/attack-migitation",
     siteName: "St. Fox",
     type: "article",
   },

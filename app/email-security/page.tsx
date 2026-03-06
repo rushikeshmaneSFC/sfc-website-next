@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Email Security | Managed Email Protection | St. Fox",
     description:
       "Comprehensive email security aligned with the VIGILE Framework. Advanced protection for a modern threat landscape.",
-    url: "https://next.stfox.com/email-security",
+    url: "https://stfox.com/email-security",
     siteName: "St. Fox",
     type: "website",
   },

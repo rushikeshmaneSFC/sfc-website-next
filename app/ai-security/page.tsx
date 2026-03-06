@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "AI Security | AI for Security | St. Fox",
     description:
       "AI-driven threat detection, securing AI systems, and expert cybersecurity innovation.",
-    url: "https://next.stfox.com/ai-security",
+    url: "https://stfox.com/ai-security",
     siteName: "St. Fox",
     type: "website",
   },
