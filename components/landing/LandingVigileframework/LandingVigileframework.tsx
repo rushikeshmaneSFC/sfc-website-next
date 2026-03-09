@@ -11,7 +11,6 @@ function LandingVigileframework() {
     const isAppleDevice = /iPad|iPhone|iPod|Macintosh/.test(userAgent);
     const isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
 
-    console.log("isApp", isAppleDevice, isSafari);
     if (isSafari) {
       setIsIOSorMac(true);
     } else {

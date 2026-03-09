@@ -105,7 +105,10 @@ export default function NewSubmissionModal({
                   type={"button"}
                   name={"Explore Services"}
                   className="px-4 py-2 bg-[#1A3F7E] text-[#fff] rounded-lg "
-                  onClick={() => navigate("/")}
+                  onClick={() => {
+                    navigate("/");
+                    setOpen(false)
+                  }}
                 />
 
                 <ReusableBtn
