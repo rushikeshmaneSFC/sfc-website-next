@@ -103,18 +103,32 @@ export default function CookieConsent() {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
-          ref={bannerRef}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="cookie-consent-title"
-          aria-describedby="cookie-consent-desc"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="fixed bottom-0 left-0 right-0 w-full z-[9999] bg-white text-black border-t border-black/10 shadow-[0_-6px_24px_rgba(0,0,0,0.08)] px-4 py-3 md:px-6 md:py-4 pointer-events-auto"
-        >
+        <>
+          {/* Backdrop: blocks interaction, below banner; does not cover banner */}
+          <motion.div
+            key="cookie-backdrop"
+            role="presentation"
+            aria-hidden="true"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="fixed inset-0 z-[9998] bg-black/50 backdrop-blur-[2px] pointer-events-auto"
+          />
+          {/* Banner: above overlay, fully visible and interactive */}
+          <motion.div
+            key="cookie-banner"
+            ref={bannerRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="cookie-consent-title"
+            aria-describedby="cookie-consent-desc"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="fixed bottom-0 left-0 right-0 w-full z-[9999] bg-white text-black border-t border-black/10 shadow-[0_-6px_24px_rgba(0,0,0,0.08)] px-4 py-3 md:px-6 md:py-4 pointer-events-auto"
+          >
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div className="flex-1 min-w-0">
               <h2
@@ -136,9 +150,9 @@ export default function CookieConsent() {
                 type="button"
                 onClick={handleAccept}
                 className="px-4 py-2.5 rounded-lg bg-black text-white font-medium text-sm hover:bg-black/90 transition-colors focus:outline-none focus:ring-2 focus:ring-black/40 focus:ring-offset-2 focus:ring-offset-white"
-                aria-label="Accept analytics cookies"
+                aria-label="Accept cookies"
               >
-                Accept analytics
+                Accept 
               </button>
               <button
                 type="button"
@@ -158,6 +172,7 @@ export default function CookieConsent() {
             </div>
           </div>
         </motion.div>
+        </>
       )}
     </AnimatePresence>
   );

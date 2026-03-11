@@ -19,7 +19,7 @@ export const VigileFrameData = [
       },
       {
         text: "Compromise Assessment",
-        route: "/compromise-assessment",
+        route: "/Compromise-Assessment",
       },
     ],
   },

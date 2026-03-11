@@ -1,11 +1,13 @@
 /**
  * Cookie consent utilities - GDPR-style consent management.
- * Persists user choice in a cookie (6-12 months expiry).
+ * - Accepted: persisted in a cookie (12 months).
+ * - Rejected: stored in sessionStorage only; banner shows again on next visit.
  */
 
 export type ConsentStatus = "accepted" | "rejected" | null;
 
 const COOKIE_NAME = "stfox_consent";
+const SESSION_KEY = "stfox_consent_rejected";
 const COOKIE_MAX_AGE_DAYS = 365; // 12 months
 
 function getCookie(name: string): string | null {
@@ -16,24 +18,32 @@ function getCookie(name: string): string | null {
 
 function setCookie(name: string, value: string, maxAgeDays: number): void {
   if (typeof document === "undefined") return;
-  const expires = new Date();
-  expires.setTime(expires.getTime() + maxAgeDays * 24 * 60 * 60 * 1000);
   document.cookie = `${name}=${encodeURIComponent(value)};path=/;max-age=${maxAgeDays * 24 * 60 * 60};samesite=lax;secure`;
 }
 
 /**
  * Get stored consent status.
- * Returns "accepted" | "rejected" | null (not yet decided).
+ * Returns "accepted" (from cookie) | "rejected" (session only) | null (not yet decided).
  */
 export function getConsent(): ConsentStatus {
-  const value = getCookie(COOKIE_NAME);
-  if (value === "accepted" || value === "rejected") return value;
+  const cookieValue = getCookie(COOKIE_NAME);
+  if (cookieValue === "accepted") return "accepted";
+  if (typeof sessionStorage !== "undefined" && sessionStorage.getItem(SESSION_KEY) === "rejected") return "rejected";
   return null;
 }
 
 /**
- * Persist consent choice. Call only after user explicitly accepts or rejects.
+ * Persist consent choice.
+ * - accepted: stored in cookie (persists across visits).
+ * - rejected: stored in sessionStorage only (banner will show again on next visit).
  */
 export function setConsent(value: "accepted" | "rejected"): void {
-  setCookie(COOKIE_NAME, value, COOKIE_MAX_AGE_DAYS);
+  if (typeof document === "undefined") return;
+  if (value === "accepted") {
+    setCookie(COOKIE_NAME, value, COOKIE_MAX_AGE_DAYS);
+    sessionStorage.removeItem(SESSION_KEY);
+  } else {
+    sessionStorage.setItem(SESSION_KEY, "rejected");
+    // Do not set a cookie for rejection — no permanent storage.
+  }
 }
