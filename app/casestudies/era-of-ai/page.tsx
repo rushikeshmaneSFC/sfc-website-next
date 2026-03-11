@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "Rajiv Bahl",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/era-of-ai" },
 };
 
 export default function EraOfAIPage() {

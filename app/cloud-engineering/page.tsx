@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["cloud engineering", "hybrid cloud", "DevSecOps", "cloud security", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/cloud-engineering" },
 };
 
 export default function CloudEngineeringPage() {

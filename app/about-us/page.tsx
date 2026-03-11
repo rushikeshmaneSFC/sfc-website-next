@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "cloud",
     "leadership",
   ],
+  alternates: { canonical: "https://stfox.com/about-us" },
 };
 
 export default function AboutUsPage() {

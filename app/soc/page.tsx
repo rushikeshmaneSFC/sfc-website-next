@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "audit preparation",
     "gap analysis",
   ],
+  alternates: { canonical: "https://stfox.com/soc" },
 };
 
 export default function SocPage() {

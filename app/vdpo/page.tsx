@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "data protection",
   ],
+  alternates: { canonical: "https://stfox.com/vdpo" },
 };
 
 export default function VdpoPage() {

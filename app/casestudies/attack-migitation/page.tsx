@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "HUMINT",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/attack-migitation" },
 };
 
 export default function AttackMitigationPage() {

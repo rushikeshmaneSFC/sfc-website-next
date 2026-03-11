@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "threat simulation",
     "security assessment",
   ],
+  alternates: { canonical: "https://stfox.com/OptimizeDefenses" },
 };
 
 export default function OptimizeDefensesPage() {

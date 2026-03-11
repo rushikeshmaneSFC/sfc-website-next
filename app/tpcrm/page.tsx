@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "vendor risk",
     "compliance",
   ],
+  alternates: { canonical: "https://stfox.com/tpcrm" },
 };
 
 export default function TpcrmPage() {

@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "VIGILE Framework",
   ],
+  alternates: { canonical: "https://stfox.com/dspm" },
 };
 
 export default function DspmPage() {

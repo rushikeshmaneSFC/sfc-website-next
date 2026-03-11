@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "CISA",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/Nationaldefense" },
 };
 
 export default function NationalDefensePage() {

@@ -10,36 +10,36 @@ function SecondContainer() {
         <p className="font-bold my-8">Introduction</p>
         <p className="my-8">
           St. Fox, a service & a Product company under Saint Fox Consultancy (P)
-          Ltd., (&quot;St. Fox&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting the
-          privacy of our customers and users of our services (collectively,
-          &quot;you&quot;). This Privacy Policy outlines the types of information we
-          collect, how we use it, and the choices you have regarding your
-          information.
+          Ltd., (&quot;St. Fox&quot;, &quot;we&quot;, &quot;us&quot;, or
+          &quot;our&quot;) is committed to protecting the privacy of our
+          customers and users of our services (collectively, &quot;you&quot;).
+          This Privacy Policy outlines the types of information we collect, how
+          we use it, and the choices you have regarding your information.
         </p>
         <p className="font-bold my-8">Acceptance of Terms</p>
         <p className="my-8">
-          The following terms and conditions (the &quot;Terms of Use&quot;) govern your
-          use of the St. Fox website including{" "}
+          The following terms and conditions (the &quot;Terms of Use&quot;)
+          govern your use of the St. Fox website including{" "}
           <a
-            href="http://www.stfox.com"
+            href="https://www.stfox.com"
             className="text-[#4169e1]"
             target="_blank"
             rel="noopener noreferrer"
           >
-            http://www.stfox.com
+            https://www.stfox.com
           </a>
           ,{" "}
           <a
-            href="http://www.saintfox.com"
+            href="https://www.saintfox.com"
             className="text-[#4169e1]"
             target="_blank"
             rel="noopener noreferrer"
           >
-            http://www.saintfox.com
+            https://www.saintfox.com
           </a>{" "}
-          and its affiliate websites (the &quot;Site&quot;). By using the Site, you
-          signify your acceptance of these Terms of Use. If you do not agree to
-          these Terms of Use, you may not use the Site.
+          and its affiliate websites (the &quot;Site&quot;). By using the Site,
+          you signify your acceptance of these Terms of Use. If you do not agree
+          to these Terms of Use, you may not use the Site.
         </p>
         <p className="font-bold my-8">Definitions</p>
         <div className="my-8">
@@ -55,25 +55,27 @@ function SecondContainer() {
             <li>
               &quot;Site&quot; refers to the website located at{" "}
               <a
-                href="http://www.stfox.com"
+                href="https://www.stfox.com"
                 className="text-[#4169e1]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                http://www.stfox.com
+                https://www.stfox.com
               </a>{" "}
               and{" "}
               <a
-                href="http://www.saintfox.com"
+                href="https://www.saintfox.com"
                 className="text-[#4169e1]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                http://www.saintfox.com
+                https://www.saintfox.com
               </a>{" "}
               owned and operated by St. Fox.
             </li>
-            <li>&quot;User&quot; refers to you, the person browsing the Site.</li>
+            <li>
+              &quot;User&quot; refers to you, the person browsing the Site.
+            </li>
           </ul>
         </div>
         <p className="font-bold my-8">Modification of Terms of Use</p>
@@ -107,20 +109,20 @@ function SecondContainer() {
         <p className="my-8">
           All content present on the Site, including text, images, graphics,
           video, audio, software, and other materials (collectively, the
-          &quot;Content&quot;), is the exclusive property of St. Fox or its licensors. The
-          Content is protected by copyright, trademark, and other applicable
-          laws. You may not copy, modify, reproduce, republish, upload, post,
-          transmit, or distribute any Content in any form or by any means
-          without St. Fox&apos;s prior written permission.
+          &quot;Content&quot;), is the exclusive property of St. Fox or its
+          licensors. The Content is protected by copyright, trademark, and other
+          applicable laws. You may not copy, modify, reproduce, republish,
+          upload, post, transmit, or distribute any Content in any form or by
+          any means without St. Fox&apos;s prior written permission.
         </p>
 
         <p className="font-bold my-8">Disclaimer of Warranties</p>
         <p className="my-8">
-          The Site and the Content are provided on an &quot;as is&quot; and &quot;as available&quot;
-          basis. St. Fox makes no warranties, express or implied, with respect
-          to the Site or the Content, including, without limitation, warranties
-          of merchantability, fitness for a particular purpose,
-          non-infringement, or accuracy.
+          The Site and the Content are provided on an &quot;as is&quot; and
+          &quot;as available&quot; basis. St. Fox makes no warranties, express
+          or implied, with respect to the Site or the Content, including,
+          without limitation, warranties of merchantability, fitness for a
+          particular purpose, non-infringement, or accuracy.
         </p>
 
         <p className="font-bold my-8">Limitation of Liability</p>
@@ -135,8 +137,8 @@ function SecondContainer() {
         <p className="my-8">
           You agree to indemnify, defend, and hold harmless St. Fox from and
           against all losses, expenses, damages, and costs, including reasonable
-          attorneys&apos; fees, arising out of or relating to your misuse of the Site
-          or the Content.
+          attorneys&apos; fees, arising out of or relating to your misuse of the
+          Site or the Content.
         </p>
 
         <p className="font-bold my-8">Accuracy of Information</p>

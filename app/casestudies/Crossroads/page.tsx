@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["data privacy", "GDPR", "CCPA", "compliance", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/Crossroads" },
 };
 
 export default function CrossroadsPage() {

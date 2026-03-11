@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "St. Fox - Home",
   description:
     "Cybersecurity services by Saint Fox Consultancy Pvt Ltd. Innovate fearlessly, protect relentlessly with managed security, cloud, data, and AI security solutions.",
-  alternates: { canonical: "/" },
+  alternates: { canonical: "https://stfox.com" },
   openGraph: {
     title: "St. Fox - Innovate Fearlessly, Protect Relentlessly",
     description:

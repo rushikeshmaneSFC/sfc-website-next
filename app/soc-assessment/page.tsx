@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["SOC Assessment", "Security Operations Center", "St. Fox", "VIGILE"],
+  alternates: { canonical: "https://stfox.com/soc-assessment" },
 };
 
 export default function SocAssessmentPage() {

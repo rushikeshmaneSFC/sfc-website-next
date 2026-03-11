@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["scalable security", "Zero Trust", "SOAR", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/ScalableSecurity" },
 };
 
 export default function ScalableSecurityPage() {

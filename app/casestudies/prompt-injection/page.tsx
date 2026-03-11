@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "Rajiv Bahl",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/prompt-injection" },
 };
 
 export default function PromptInjectionPage() {

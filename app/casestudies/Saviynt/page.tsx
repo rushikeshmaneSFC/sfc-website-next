@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["Saviynt", "St. Fox", "IGA", "PAM", "identity", "India"],
+  alternates: { canonical: "https://stfox.com/casestudies/Saviynt" },
 };
 
 export default function SaviyntPage() {

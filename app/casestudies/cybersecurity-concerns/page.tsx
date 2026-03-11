@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "Olympic Destroyer",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/cybersecurity-concerns" },
 };
 
 export default function CybersecurityConcernsPage() {

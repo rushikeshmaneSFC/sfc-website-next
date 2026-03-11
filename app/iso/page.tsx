@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     "security controls",
     "compliance",
   ],
+  alternates: { canonical: "https://stfox.com/iso" },
 };
 
 export default function ISOPage() {

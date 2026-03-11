@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["careers", "St. Fox", "jobs", "culture", "diversity"],
+  alternates: { canonical: "https://stfox.com/careers" },
 };
 
 export default function CareersPage() {

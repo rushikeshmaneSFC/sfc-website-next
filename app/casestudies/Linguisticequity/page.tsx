@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "multilingual AI",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/Linguisticequity" },
 };
 
 export default function LinguisticEquityPage() {

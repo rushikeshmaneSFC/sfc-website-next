@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "security strategy",
   ],
+  alternates: { canonical: "https://stfox.com/vciso" },
 };
 
 export default function VcisoPage() {

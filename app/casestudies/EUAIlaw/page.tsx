@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["EU AI law", "Artificial Intelligence Act", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/EUAIlaw" },
 };
 
 export default function EUAIlawPage() {

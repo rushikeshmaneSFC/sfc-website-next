@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "cybersecurity",
   ],
+  alternates: { canonical: "https://stfox.com/soc2" },
 };
 
 export default function Soc2Page() {

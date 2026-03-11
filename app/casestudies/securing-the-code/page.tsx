@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "OWASP",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/securing-the-code" },
 };
 
 export default function SecuringTheCodePage() {

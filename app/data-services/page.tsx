@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["Data Services", "compliance", "security", "St. Fox", "DSPM", "DLP", "Privacy Ops"],
+  alternates: { canonical: "https://stfox.com/data-services" },
 };
 
 export default function DataServicesPage() {

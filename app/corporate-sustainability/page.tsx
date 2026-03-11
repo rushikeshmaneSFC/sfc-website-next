@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["corporate sustainability", "ESG", "environmental", "social responsibility", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/corporate-sustainability" },
 };
 
 export default function CorporateSustainabilityPage() {

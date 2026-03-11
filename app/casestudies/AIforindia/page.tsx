@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["AI for India", "India AI", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/AIforindia" },
 };
 
 export default function AIForIndiaPage() {

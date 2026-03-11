@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     "GDPR",
     "HIPAA",
   ],
+  alternates: { canonical: "https://stfox.com/vapt" },
 };
 
 export default function VaptPage() {

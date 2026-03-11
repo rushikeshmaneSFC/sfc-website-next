@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "email protection",
   ],
+  alternates: { canonical: "https://stfox.com/email-security" },
 };
 
 export default function EmailSecurityPage() {

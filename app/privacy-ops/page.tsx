@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "DSAR",
   ],
+  alternates: { canonical: "https://stfox.com/privacy-ops" },
 };
 
 export default function PrivacyOpsPage() {

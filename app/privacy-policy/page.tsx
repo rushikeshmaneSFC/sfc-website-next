@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["privacy policy", "St. Fox", "DPDP", "GDPR", "data protection"],
+  alternates: { canonical: "https://stfox.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

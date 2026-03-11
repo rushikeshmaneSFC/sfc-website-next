@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "electoral integrity",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/democratic-election" },
 };
 
 export default function DemocraticElectionPage() {

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "digital economy",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/navigating-frontier" },
 };
 
 export default function NavigatingFrontierPage() {

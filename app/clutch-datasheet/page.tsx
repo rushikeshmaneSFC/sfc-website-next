@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["CLUTCH", "datasheet", "Cisco Secure Access", "automation", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/clutch-datasheet" },
 };
 
 export default function ClutchDatasheetPage() {

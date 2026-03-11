@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["hybrid cloud", "microservices", "CI/CD", "DevSecOps", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/Hybridcloud" },
 };
 
 export default function HybridcloudPage() {

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "VIGILE Framework",
   ],
+  alternates: { canonical: "https://stfox.com/ai-security" },
 };
 
 export default function AiSecurityPage() {

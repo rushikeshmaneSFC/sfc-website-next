@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "network security",
   ],
+  alternates: { canonical: "https://stfox.com/managed" },
 };
 
 export default function ManagedPage() {

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["blog", "insights", "cybersecurity", "case studies", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies" },
 };
 
 export default function CasestudiesPage() {

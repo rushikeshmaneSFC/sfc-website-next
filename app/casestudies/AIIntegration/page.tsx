@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["AI integration", "cybersecurity", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/AIIntegration" },
 };
 
 export default function AIIntegrationPage() {

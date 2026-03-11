@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "cloud security",
   ],
+  alternates: { canonical: "https://stfox.com/sasecloudsecurity" },
 };
 
 export default function SaseCloudSecurityPage() {

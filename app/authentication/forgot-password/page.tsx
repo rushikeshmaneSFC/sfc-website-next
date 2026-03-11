@@ -4,6 +4,7 @@ import ForgotPasswordClient from "@/components/auth/ForgotPasswordClient";
 export const metadata: Metadata = {
   title: "Forgot Password",
   robots: { index: false, follow: false },
+  alternates: { canonical: "https://stfox.com/authentication/forgot-password" },
 };
 
 export default function ForgotPasswordPage() {

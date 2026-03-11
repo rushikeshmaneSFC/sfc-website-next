@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["terms of use", "St. Fox", "legal", "website terms"],
+  alternates: { canonical: "https://stfox.com/terms-of-use" },
 };
 
 export default function TermsOfUsePage() {

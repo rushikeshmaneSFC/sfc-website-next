@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "GDPR",
     "HIPAA",
   ],
+  alternates: { canonical: "https://stfox.com/managed-identity" },
 };
 
 export default function ManagedIdentityPage() {

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "data security",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/tiktok" },
 };
 
 export default function TiktokPage() {

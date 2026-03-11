@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "cloud computing",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/intricateworld" },
 };
 
 export default function IntricateWorldPage() {

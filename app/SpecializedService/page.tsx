@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "vDPO",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/SpecializedService" },
 };
 
 export default function SpecializedServicePage() {

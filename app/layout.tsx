@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import AppShell from "@/components/layout/AppShell";
 import ConsentProvider from "@/components/consent/ConsentProvider";
+
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID?.trim();
+const GTM_INIT_CODE = GTM_ID
+  ? `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});if(w.__gtmInitialized)return;w.__gtmInitialized=true;var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID.replace(/'/g, "\\'")}');`
+  : "";
 
 const montserrat = Montserrat({
   weight: ["400", "500", "600"],
@@ -98,6 +104,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {GTM_ID && (
+          <Script
+            id="gtm-script"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{ __html: GTM_INIT_CODE }}
+          />
+        )}
         <script
           dangerouslySetInnerHTML={{
             __html: `document.documentElement.style.colorScheme='light'`,
@@ -117,6 +130,17 @@ export default function RootLayout({
         />
       </head>
       <body className={`${montserrat.className} font-sans bg-gray-50 antialiased`}>
+        {GTM_ID && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height={0}
+              width={0}
+              style={{ display: "none", visibility: "hidden" }}
+              title="GTM noscript"
+            />
+          </noscript>
+        )}
         <AppShell>{children}</AppShell>
         <ConsentProvider />
       </body>

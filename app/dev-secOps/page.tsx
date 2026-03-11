@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "VIGILE Framework",
     "secure development",
   ],
+  alternates: { canonical: "https://stfox.com/dev-secOps" },
 };
 
 export default function DevSecOpsPage() {

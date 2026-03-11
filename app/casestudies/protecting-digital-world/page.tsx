@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "cybersecurity",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/protecting-digital-world" },
 };
 
 export default function ProtectingDigitalWorldPage() {

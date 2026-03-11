@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "MDR",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/managed-services" },
 };
 
 export default function ManagedServicesPage() {

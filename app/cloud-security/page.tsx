@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "cloud compliance",
     "cloud risk assessment",
   ],
+  alternates: { canonical: "https://stfox.com/cloud-security" },
 };
 
 export default function CloudSecurityPage() {

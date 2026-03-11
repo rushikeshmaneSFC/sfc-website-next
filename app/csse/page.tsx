@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["CSSE", "Cisco Secure Access", "SSE", "VIGILE", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/csse" },
 };
 
 export default function CssePage() {

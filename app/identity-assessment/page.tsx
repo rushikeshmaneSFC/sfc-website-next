@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "identity security",
     "access control",
   ],
+  alternates: { canonical: "https://stfox.com/identity-assessment" },
 };
 
 export default function IdentityAssessmentPage() {

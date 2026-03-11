@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "threat detection",
     "remediation",
   ],
+  alternates: { canonical: "https://stfox.com/Compromise-Assessment" },
 };
 
 export default function CompromiseAssessmentPage() {

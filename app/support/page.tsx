@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   keywords: ["breach support", "incident response", "cybersecurity", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/support" },
 };
 
 export default function SupportPage() {

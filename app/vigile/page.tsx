@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     "managed security",
     "cyber resilience",
   ],
+  alternates: { canonical: "https://stfox.com/vigile" },
 };
 
 export default function VigilePage() {

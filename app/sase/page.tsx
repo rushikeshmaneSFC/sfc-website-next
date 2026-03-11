@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "zero trust",
     "network security",
   ],
+  alternates: { canonical: "https://stfox.com/sase" },
 };
 
 export default function SasePage() {

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "enterprise AI",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/unleashing-creativity" },
 };
 
 export default function UnleashingCreativityPage() {

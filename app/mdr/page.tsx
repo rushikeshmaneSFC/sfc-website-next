@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "SOAR",
     "behavioral analytics",
   ],
+  alternates: { canonical: "https://stfox.com/mdr" },
 };
 
 export default function MdrPage() {

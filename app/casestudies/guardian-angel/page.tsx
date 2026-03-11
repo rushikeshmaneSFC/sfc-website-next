@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "cybersecurity",
     "St. Fox",
   ],
+  alternates: { canonical: "https://stfox.com/casestudies/guardian-angel" },
 };
 
 export default function GuardianAngelPage() {

@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "VIGILE Framework",
   ],
+  alternates: { canonical: "https://stfox.com/dlp" },
 };
 
 export default function DlpPage() {

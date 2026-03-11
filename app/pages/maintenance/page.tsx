@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "We're currently performing maintenance. Please check back soon. St. Fox - Innovate Fearlessly, Protect Relentlessly.",
   robots: { index: false, follow: false },
+  alternates: { canonical: "https://stfox.com/pages/maintenance" },
 };
 
 export default function MaintenancePage() {

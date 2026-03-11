@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "The page you are looking for could not be found. St. Fox - Innovate Fearlessly, Protect Relentlessly.",
   robots: { index: false, follow: false },
+  alternates: { canonical: "https://stfox.com/pages/404" },
 };
 
 export default function NotFoundPageRoute() {

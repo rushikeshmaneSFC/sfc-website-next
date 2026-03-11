@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   keywords: ["automated response", "SOAR", "EDR", "cybersecurity", "St. Fox"],
+  alternates: { canonical: "https://stfox.com/casestudies/Automatedmechanisms" },
 };
 
 export default function AutomatedMechanismsPage() {

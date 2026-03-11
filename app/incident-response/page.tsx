@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "St. Fox",
     "VIGILE Framework",
   ],
+  alternates: { canonical: "https://stfox.com/incident-response" },
 };
 
 export default function IncidentResponsePage() {
